@@ -17,7 +17,7 @@ By default the icons can only be used inside Lovelace dashbaords. To use the ico
 ```yaml
 frontend:
   extra_module_url:
-    - /hacsfiles/hass-bha-icons/hass-bha-icons.js
+    - /hacsfiles/hass-custom-icons/hass-custom-icons.js
 ```
 ## Adding More Icons
 If you would like to add more icons, please rasie an issue in the [Github repository](https://github.com/MattFryer/Hass-Custom-Icons/issues).
