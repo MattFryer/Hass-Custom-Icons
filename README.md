@@ -38,6 +38,7 @@ Below are all of the currently available icons in this repository and their code
 | ![calibre-web](/Assets/Icons/calibre-web.svg)  | cust:calibre-web  |
 | ![disney-plus](/Assets/Icons/disney-plus.svg)  | cust:disney-plus  |
 | ![esphome](/Assets/Icons/esphome.svg)  | cust:esphome  |
+| ![fileflows](/Assets/Icons/fileflows.svg)  | cust:fileflows  |
 | ![firetv](/Assets/Icons/firetv.svg)  | cust:firetv  |
 | ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
 | ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
