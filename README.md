@@ -46,6 +46,7 @@ Below are all of the currently available icons in this repository and their code
 | ![hp](/Assets/Icons/hp.svg) | cust:hbo-go  |
 | ![influxdb](/Assets/Icons/influxdb.svg)  | cust:hp  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
+| ![layzspa-bubbles](/Assets/Icons/layzspa-bubbles.svg)  | cust:layzspa-bubbles |
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
 | ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
