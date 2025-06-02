@@ -47,9 +47,12 @@ Below are all of the currently available icons in this repository and their code
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
+| ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
 | ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
 | ![node-red](/Assets/Icons/node-red.svg)  | cust:node-red  |
+| ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
+| ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
 | ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
 | ![piper](/Assets/Icons/piper.svg)  | cust:piper  |
 | ![readarr](/Assets/Icons/readarr.svg)  | cust:readarr  |
