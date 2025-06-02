@@ -47,6 +47,7 @@ Below are all of the currently available icons in this repository and their code
 | ![influxdb](/Assets/Icons/influxdb.svg)  | cust:hp  |
 | ![jellyseerr](/Assets/Icons/jellyseerr.svg)  | cust:jellyseerr  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
+| ![layzspa](/Assets/Icons/layzspa.svg)  | cust:layzspa |
 | ![layzspa-bubbles](/Assets/Icons/layzspa-bubbles.svg)  | cust:layzspa-bubbles |
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
