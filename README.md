@@ -42,7 +42,8 @@ Below are all of the currently available icons in this repository and their code
 | ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
 | ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
 | ![hbo-go](/Assets/Icons/hbo-go.svg) | cust:hbo-go  |
-| ![influxdb](/Assets/Icons/influxdb.svg)  | cust:influxdb  |
+| ![hp](/Assets/Icons/hp.svg) | cust:hbo-go  |
+| ![influxdb](/Assets/Icons/influxdb.svg)  | cust:hp  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
