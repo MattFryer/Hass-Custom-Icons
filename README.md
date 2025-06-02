@@ -55,6 +55,7 @@ Below are all of the currently available icons in this repository and their code
 | ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
 | ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
 | ![piper](/Assets/Icons/piper.svg)  | cust:piper  |
+| ![planka](/Assets/Icons/planka.svg)  | cust:planka  |
 | ![readarr](/Assets/Icons/readarr.svg)  | cust:readarr  |
 | ![ring](/Assets/Icons/ring.svg)  | cust:ring  |
 | ![sonoff](/Assets/Icons/sonoff.svg)  | cust:sonoff  |
