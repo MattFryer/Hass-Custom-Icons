@@ -33,6 +33,7 @@ Below are all of the currently available icons in this repository and their code
 | ![apple-tv](/Assets/Icons/apple-tv.svg)  | cust:apple-tv  |
 | ![apple-tv](/Assets/Icons/apple-tv-plus.svg)  | cust:apple-tv-plus  |
 | ![audiobookshelf](/Assets/Icons/audiobookshelf.svg)  | cust:audiobookshelf  |
+| ![bazarr](/Assets/Icons/bazarr.svg)  | cust:bazarr  |
 | ![bitwarden](/Assets/Icons/bitwarden.svg) | cust:bitwarden  |
 | ![bookstack](/Assets/Icons/bookstack.svg) | cust:bookstack  |
 | ![calibre-web](/Assets/Icons/calibre-web.svg)  | cust:calibre-web  |
