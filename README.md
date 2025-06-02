@@ -51,6 +51,7 @@ Below are all of the currently available icons in this repository and their code
 | ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
 | ![node-red](/Assets/Icons/node-red.svg)  | cust:node-red  |
+| ![ntfy](/Assets/Icons/ntfy.svg)  | cust:ntfy  |
 | ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
 | ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
 | ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
