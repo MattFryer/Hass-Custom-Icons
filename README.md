@@ -74,6 +74,7 @@ Below are all of the currently available icons in this repository and their code
 | ![tp-link](/Assets/Icons/tp-link.svg)  | cust:tp-link  |
 | ![tree-christmas](/Assets/Icons/tree-christmas.svg)  | cust:tree-christmas  |
 | ![vscode](/Assets/Icons/vscode.svg)  | cust:vscode  |
+| ![watchtower](/Assets/Icons/watchtower.svg)  | cust:watchtower  |
 | ![wemo](/Assets/Icons/wemo.svg)  | cust:wemo  |
 
 ## Adding More Icons
