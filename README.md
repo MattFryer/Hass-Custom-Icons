@@ -1,6 +1,16 @@
 # Home Assistant Additional Icons
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+[![GitHub license](https://img.shields.io/github/license/MattFryer/Hass-Custom-Icons.svg?logo=gnu&logoColor=ffffff)](https://github.com/MattFryer/Hass-Custom-Icons/blob/master/LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/MattFryer/Hass-Custom-Icons)
+![GitHub last commit](https://img.shields.io/github/last-commit/MattFryer/Hass-Custom-Icons)
+![GitHub contributors](https://img.shields.io/github/contributors/MattFryer/Hass-Custom-Icons)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/MattFryer/Hass-Custom-Icons)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/MattFryer/Hass-Custom-Icons)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/MattFryer/Hass-Custom-Icons.svg)](http://isitmaintained.com/project/MattFryer/Hass-Custom-Icons "Average time to resolve an issue")
+![GitHub Repo stars](https://img.shields.io/github/stars/MattFryer/Hass-Custom-Icons)
+![GitHub forks](https://img.shields.io/github/forks/MattFryer/Hass-Custom-Icons)
+![GitHub watchers](https://img.shields.io/github/watchers/MattFryer/Hass-Custom-Icons)
 
 Additional icons for use in Home Assistant UI
 
@@ -79,3 +89,8 @@ Below are all of the currently available icons in this repository and their code
 
 ## Adding More Icons
 If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository. Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls).
+
+If you just want to show your appreciation, you can sponsor the project or send a one off donation using the links below:
+
+[<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" height="37px" style="margin: 5px"/>](https://buymeacoffee.com/mattfryer)
+[<img src="assets/Readme/github-sponsors-button.svg" height="37px" style="margin: 5px"/>](https://github.com/sponsors/MattFryer)
