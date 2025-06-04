@@ -68,6 +68,8 @@ Below are all of the currently available icons in this repository and their code
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
 | ![node-red](/Assets/Icons/node-red.svg)  | cust:node-red  |
 | ![ntfy](/Assets/Icons/ntfy.svg)  | cust:ntfy  |
+| ![octoprint](/Assets/Icons/octoprint.svg)  | cust:octoprint  |
+| ![octoprint-alt](/Assets/Icons/octoprint-alt.svg)  | cust:octoprint-alt  |
 | ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
 | ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
 | ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
@@ -94,4 +96,4 @@ If you would like to add more icons, please [raise an issue](https://github.com/
 If you just want to show your appreciation, you can sponsor the project or send a one off donation using the links below:
 
 [<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" height="37px" style="margin: 5px"/>](https://buymeacoffee.com/mattfryer)
-[<img src="assets/Readme/github-sponsors-button.svg" height="37px" style="margin: 5px"/>](https://github.com/sponsors/MattFryer)
+[<img src="Assets/Readme/github-sponsors-button.svg" height="37px" style="margin: 5px"/>](https://github.com/sponsors/MattFryer)
