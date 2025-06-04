@@ -55,7 +55,7 @@ Below are all of the currently available icons in this repository and their code
 | ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
 | ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
 | ![hbo-go](/Assets/Icons/hbo-go.svg) | cust:hbo-go  |
-| ![hp](/Assets/Icons/hp.svg) | cust:hbo-go  |
+| ![hp](/Assets/Icons/hp.svg) | cust:hp  |
 | ![influxdb](/Assets/Icons/influxdb.svg)  | cust:hp  |
 | ![jellyseerr](/Assets/Icons/jellyseerr.svg)  | cust:jellyseerr  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
