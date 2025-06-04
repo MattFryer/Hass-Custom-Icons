@@ -32,7 +32,8 @@ frontend:
     - /hacsfiles/hass-custom-icons/hass-custom-icons.js
 ```
 
-You may need to refresh your browser a couple of times for the icons to be shown the first time.
+> [!TIP]
+> You may need to refresh your browser a couple of times for the icons to be shown the first time.
 
 ## Icons
 Below are all of the currently available icons in this repository and their codes to add them to your Home Assistant dashboards:
