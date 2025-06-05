@@ -64,6 +64,7 @@ Below are all of the currently available icons in this repository and their code
 | ![layzspa-bubbles](/Assets/Icons/layzspa-bubbles.svg)  | cust:layzspa-bubbles |
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
+| ![linkding](/Assets/Icons/linkding.svg)  | cust:linkding  |
 | ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
 | ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
