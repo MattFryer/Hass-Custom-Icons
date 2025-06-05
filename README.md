@@ -58,6 +58,7 @@ Below are all of the currently available icons in this repository and their code
 | ![homepage](/Assets/Icons/homepage.svg) | cust:homepage  |
 | ![hp](/Assets/Icons/hp.svg) | cust:hp  |
 | ![influxdb](/Assets/Icons/influxdb.svg)  | cust:influxdb  |
+| ![it-tools](/Assets/Icons/it-tools.svg)  | cust:it-tools  |
 | ![jellyseerr](/Assets/Icons/jellyseerr.svg)  | cust:jellyseerr  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
 | ![layzspa](/Assets/Icons/layzspa.svg)  | cust:layzspa |
