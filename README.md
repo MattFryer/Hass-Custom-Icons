@@ -92,6 +92,7 @@ Below are all of the currently available icons in this repository and their code
 | ![vscode](/Assets/Icons/vscode.svg)  | cust:vscode  |
 | ![watchtower](/Assets/Icons/watchtower.svg)  | cust:watchtower  |
 | ![wemo](/Assets/Icons/wemo.svg)  | cust:wemo  |
+| ![zigbee2mqtt](/Assets/Icons/zigbee2mqtt.svg)  | cust:zigbee2mqtt  |
 
 ## Adding More Icons
 If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository. Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls).
