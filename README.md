@@ -73,6 +73,7 @@ Below are all of the currently available icons in this repository and their code
 | ![octoprint](/Assets/Icons/octoprint.svg)  | cust:octoprint  |
 | ![octoprint-alt](/Assets/Icons/octoprint-alt.svg)  | cust:octoprint-alt  |
 | ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
+| ![omada](/Assets/Icons/omada.svg)  | cust:omada  |
 | ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
 | ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
 | ![peanut](/Assets/Icons/peanut.svg)  | cust:peanut  |
