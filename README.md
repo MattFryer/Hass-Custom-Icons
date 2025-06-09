@@ -80,6 +80,7 @@ Below are all of the currently available icons in this component and their codes
 | ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
 | ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
+| ![music-assistant](/Assets/Icons/music-assistant.svg)  | cust:music-assistant  |
 | ![node-red](/Assets/Icons/node-red.svg)  | cust:node-red  |
 | ![ntfy](/Assets/Icons/ntfy.svg)  | cust:ntfy  |
 | ![octoprint](/Assets/Icons/octoprint.svg)  | cust:octoprint  |
