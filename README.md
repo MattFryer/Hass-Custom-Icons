@@ -64,6 +64,7 @@ Below are all of the currently available icons in this component and their codes
 | ![firetv](/Assets/Icons/firetv.svg)  | cust:firetv  |
 | ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
 | ![get-iplayer](/Assets/Icons/get-iplayer.svg)  | cust:get-iplayer  |
+| ![gramps-web](/Assets/Icons/gramps-web.svg)  | cust:gramps-web  |
 | ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
 | ![hbo-go](/Assets/Icons/hbo-go.svg) | cust:hbo-go  |
 | ![homepage](/Assets/Icons/homepage.svg) | cust:homepage  |
