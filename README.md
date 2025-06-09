@@ -77,6 +77,7 @@ Below are all of the currently available icons in this component and their codes
 | ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
 | ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
 | ![linkding](/Assets/Icons/linkding.svg)  | cust:linkding  |
+| ![linktap](/Assets/Icons/linktap.svg)  | cust:linktap  |
 | ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
 | ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
 | ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
