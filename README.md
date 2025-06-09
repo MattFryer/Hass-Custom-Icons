@@ -71,6 +71,7 @@ Below are all of the currently available icons in this component and their codes
 | ![influxdb](/Assets/Icons/influxdb.svg)  | cust:influxdb  |
 | ![it-tools](/Assets/Icons/it-tools.svg)  | cust:it-tools  |
 | ![jellyseerr](/Assets/Icons/jellyseerr.svg)  | cust:jellyseerr  |
+| ![jellystat](/Assets/Icons/jellystat.svg)  | cust:jellystat  |
 | ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
 | ![layzspa](/Assets/Icons/layzspa.svg)  | cust:layzspa |
 | ![layzspa-bubbles](/Assets/Icons/layzspa-bubbles.svg)  | cust:layzspa-bubbles |
