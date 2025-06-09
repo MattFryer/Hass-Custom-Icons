@@ -26,15 +26,15 @@ If you just want to show your appreciation, you can sponsor the project or send 
 
 ## Installation
 It is advised to install via HACS (Home Assistand Community Store).
-1. Ensure HACS is already installed on Home Assistant https://hacs.xyz/docs/installation/prerequisites/
-2. In Home Assistant, navigate to **HACS** -> **Frontend**
+1. Ensure HACS is already installed on Home Assistant https://hacs.xyz/docs/use/
+2. In Home Assistant, navigate to **HACS**.
 3. Select the 3 dots icon in the top right and choose **Custom repositories**
 4. Enter `https://github.com/MattFryer/Hass-Custom-Icons` as the repository and select the type of **Dashboard**. Click on **Add**.
 5. **Custom Icons Pack** should now be shown just like any other HACS components when searching for it. Click on **Custom Icons Pack**, then in the bottom right click **DOWNLOAD** then in the popup window that opens click **DOWNLOAD** again.
 6. Once download and installation is complete, confirm you wish to **RELOAD** the UI
 
 ### Optional - Sitewide availability
-By default the icons can only be used inside Lovelace dashboards. To use the icons site wide, such as for custom sidebar links, add the following to the `Frontend` section of your Home Assistant `configuration.yaml` file:
+By default the icons can only be used inside Lovelace dashboards. To use the icons site wide, such as for custom sidebar links, add the following to the `frontend` section of your Home Assistant `configuration.yaml` file:
 
 ```yaml
 frontend:
