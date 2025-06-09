@@ -93,6 +93,7 @@ Below are all of the currently available icons in this component and their codes
 | ![planka](/Assets/Icons/planka.svg)  | cust:planka  |
 | ![readarr](/Assets/Icons/readarr.svg)  | cust:readarr  |
 | ![ring](/Assets/Icons/ring.svg)  | cust:ring  |
+| ![romm](/Assets/Icons/romm.svg)  | cust:romm  |
 | ![sonoff](/Assets/Icons/sonoff.svg)  | cust:sonoff  |
 | ![sonos](/Assets/Icons/sonos.svg)  | cust:sonos  |
 | ![synology](/Assets/Icons/synology.svg)  | cust:synology  |
