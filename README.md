@@ -83,6 +83,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/logitech.svg" width="48px"> | cust:logitech  |
 | <img src="/Assets/Icons/mariadb.svg" width="48px"> | cust:mariadb  |
 | <img src="/Assets/Icons/mealie.svg" width="48px"> | cust:mealie  |
+| <img src="/Assets/Icons/mqtt-explorer.svg" width="48px"> | cust:mqtt-explorer  |
 | <img src="/Assets/Icons/music-assistant.svg" width="48px"> | cust:music-assistant  |
 | <img src="/Assets/Icons/node-red.svg" width="48px"> | cust:node-red  |
 | <img src="/Assets/Icons/ntfy.svg" width="48px"> | cust:ntfy  |
