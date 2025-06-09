@@ -88,6 +88,7 @@ Below are all of the currently available icons in this component and their codes
 | ![ntfy](/Assets/Icons/ntfy.svg)  | cust:ntfy  |
 | ![octoprint](/Assets/Icons/octoprint.svg)  | cust:octoprint  |
 | ![octoprint-alt](/Assets/Icons/octoprint-alt.svg)  | cust:octoprint-alt  |
+| ![octopus-energy](/Assets/Icons/octopus-energy.svg)  | cust:octopus-energy  |
 | ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
 | ![omada](/Assets/Icons/omada.svg)  | cust:omada  |
 | ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
