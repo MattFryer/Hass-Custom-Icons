@@ -2,7 +2,7 @@
 name: Icon request
 about: Suggest an icon to be added to this project
 title: "[ICON REQUEST]"
-labels: enhancement
+labels: Icon Request
 assignees: MattFryer
 
 ---
