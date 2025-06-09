@@ -50,64 +50,64 @@ Below are all of the currently available icons in this component and their codes
 
 | Icon          | Code          |
 | ------------- | ------------- |
-| ![alexa](/Assets/Icons/alexa.svg) | cust:alexa  |
-| ![apple-tv](/Assets/Icons/apple-tv.svg)  | cust:apple-tv  |
-| ![apple-tv](/Assets/Icons/apple-tv-plus.svg)  | cust:apple-tv-plus  |
-| ![audiobookshelf](/Assets/Icons/audiobookshelf.svg)  | cust:audiobookshelf  |
-| ![bazarr](/Assets/Icons/bazarr.svg)  | cust:bazarr  |
-| ![bitwarden](/Assets/Icons/bitwarden.svg) | cust:bitwarden  |
-| ![bookstack](/Assets/Icons/bookstack.svg) | cust:bookstack  |
-| ![calibre-web](/Assets/Icons/calibre-web.svg)  | cust:calibre-web  |
-| ![disney-plus](/Assets/Icons/disney-plus.svg)  | cust:disney-plus  |
-| ![esphome](/Assets/Icons/esphome.svg)  | cust:esphome  |
-| ![fileflows](/Assets/Icons/fileflows.svg)  | cust:fileflows  |
-| ![firetv](/Assets/Icons/firetv.svg)  | cust:firetv  |
-| ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
-| ![get-iplayer](/Assets/Icons/get-iplayer.svg)  | cust:get-iplayer  |
-| ![gramps-web](/Assets/Icons/gramps-web.svg)  | cust:gramps-web  |
-| ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
-| ![hbo-go](/Assets/Icons/hbo-go.svg) | cust:hbo-go  |
-| ![homepage](/Assets/Icons/homepage.svg) | cust:homepage  |
-| ![hp](/Assets/Icons/hp.svg) | cust:hp  |
-| ![influxdb](/Assets/Icons/influxdb.svg)  | cust:influxdb  |
-| ![it-tools](/Assets/Icons/it-tools.svg)  | cust:it-tools  |
-| ![jellyseerr](/Assets/Icons/jellyseerr.svg)  | cust:jellyseerr  |
-| ![jellystat](/Assets/Icons/jellystat.svg)  | cust:jellystat  |
-| ![kasa-smart](/Assets/Icons/kasa-smart.svg)  | cust:kasa-smart  |
-| ![layzspa](/Assets/Icons/layzspa.svg)  | cust:layzspa |
-| ![layzspa-bubbles](/Assets/Icons/layzspa-bubbles.svg)  | cust:layzspa-bubbles |
-| ![layzspa-heat](/Assets/Icons/layzspa-heat.svg)  | cust:layzspa-heat  |
-| ![layzspa-pump](/Assets/Icons/layzspa-pump.svg)  | cust:layzspa-pump  |
-| ![linkding](/Assets/Icons/linkding.svg)  | cust:linkding  |
-| ![linktap](/Assets/Icons/linktap.svg)  | cust:linktap  |
-| ![logitech](/Assets/Icons/logitech.svg)  | cust:logitech  |
-| ![mariadb](/Assets/Icons/mariadb.svg)  | cust:mariadb  |
-| ![mealie](/Assets/Icons/mealie.svg)  | cust:mealie  |
-| ![music-assistant](/Assets/Icons/music-assistant.svg)  | cust:music-assistant  |
-| ![node-red](/Assets/Icons/node-red.svg)  | cust:node-red  |
-| ![ntfy](/Assets/Icons/ntfy.svg)  | cust:ntfy  |
-| ![octoprint](/Assets/Icons/octoprint.svg)  | cust:octoprint  |
-| ![octoprint-alt](/Assets/Icons/octoprint-alt.svg)  | cust:octoprint-alt  |
-| ![octopus-energy](/Assets/Icons/octopus-energy.svg)  | cust:octopus-energy  |
-| ![ollama](/Assets/Icons/ollama.svg)  | cust:ollama  |
-| ![omada](/Assets/Icons/omada.svg)  | cust:omada  |
-| ![openai](/Assets/Icons/openai.svg)  | cust:openai  |
-| ![paperless](/Assets/Icons/paperless.svg)  | cust:paperless  |
-| ![peanut](/Assets/Icons/peanut.svg)  | cust:peanut  |
-| ![piper](/Assets/Icons/piper.svg)  | cust:piper  |
-| ![planka](/Assets/Icons/planka.svg)  | cust:planka  |
-| ![readarr](/Assets/Icons/readarr.svg)  | cust:readarr  |
-| ![ring](/Assets/Icons/ring.svg)  | cust:ring  |
-| ![romm](/Assets/Icons/romm.svg)  | cust:romm  |
-| ![sonoff](/Assets/Icons/sonoff.svg)  | cust:sonoff  |
-| ![sonos](/Assets/Icons/sonos.svg)  | cust:sonos  |
-| ![synology](/Assets/Icons/synology.svg)  | cust:synology  |
-| ![synology-dsm](/Assets/Icons/synology-dsm.svg)   | cust:synology-dsm  |
-| ![tado](/Assets/Icons/tado.svg)  | cust:tado  |
-| ![tasmota](/Assets/Icons/tasmota.svg)  | cust:tasmota  |
-| ![tp-link](/Assets/Icons/tp-link.svg)  | cust:tp-link  |
-| ![tree-christmas](/Assets/Icons/tree-christmas.svg)  | cust:tree-christmas  |
-| ![vscode](/Assets/Icons/vscode.svg)  | cust:vscode  |
-| ![watchtower](/Assets/Icons/watchtower.svg)  | cust:watchtower  |
-| ![wemo](/Assets/Icons/wemo.svg)  | cust:wemo  |
-| ![zigbee2mqtt](/Assets/Icons/zigbee2mqtt.svg)  | cust:zigbee2mqtt  |
+| <img src="/Assets/Icons/alexa.svg" width="48px"> | cust:alexa  |
+| <img src="/Assets/Icons/apple-tv.svg" width="48px"> | cust:apple-tv  |
+| <img src="/Assets/Icons/apple-tv-plus.svg" width="48px"> | cust:apple-tv-plus  |
+| <img src="/Assets/Icons/audiobookshelf.svg" width="48px"> | cust:audiobookshelf  |
+| <img src="/Assets/Icons/bazarr.svg" width="48px"> | cust:bazarr  |
+| <img src="/Assets/Icons/bitwarden.svg" width="48px">| cust:bitwarden  |
+| <img src="/Assets/Icons/bookstack.svg" width="48px">| cust:bookstack  |
+| <img src="/Assets/Icons/calibre-web.svg" width="48px"> | cust:calibre-web  |
+| <img src="/Assets/Icons/disney-plus.svg" width="48px"> | cust:disney-plus  |
+| <img src="/Assets/Icons/esphome.svg" width="48px"> | cust:esphome  |
+| <img src="/Assets/Icons/fileflows.svg" width="48px"> | cust:fileflows  |
+| <img src="/Assets/Icons/firetv.svg" width="48px"> | cust:firetv  |
+| <img src="/Assets/Icons/fitbit.svg" width="48px"> | cust:fitbit  |
+| <img src="/Assets/Icons/get-iplayer.svg" width="48px"> | cust:get-iplayer  |
+| <img src="/Assets/Icons/gramps-web.svg" width="48px"> | cust:gramps-web  |
+| <img src="/Assets/Icons/hass.svg" width="48px"> | cust:hass  |
+| <img src="/Assets/Icons/hbo-go.svg" width="48px">| cust:hbo-go  |
+| <img src="/Assets/Icons/homepage.svg" width="48px">| cust:homepage  |
+| <img src="/Assets/Icons/hp.svg" width="48px">| cust:hp  |
+| <img src="/Assets/Icons/influxdb.svg" width="48px"> | cust:influxdb  |
+| <img src="/Assets/Icons/it-tools.svg" width="48px"> | cust:it-tools  |
+| <img src="/Assets/Icons/jellyseerr.svg" width="48px"> | cust:jellyseerr  |
+| <img src="/Assets/Icons/jellystat.svg" width="48px"> | cust:jellystat  |
+| <img src="/Assets/Icons/kasa-smart.svg" width="48px"> | cust:kasa-smart  |
+| <img src="/Assets/Icons/layzspa.svg" width="48px"> | cust:layzspa |
+| <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px"> | cust:layzspa-bubbles |
+| <img src="/Assets/Icons/layzspa-heat.svg" width="48px"> | cust:layzspa-heat  |
+| <img src="/Assets/Icons/layzspa-pump.svg" width="48px"> | cust:layzspa-pump  |
+| <img src="/Assets/Icons/linkding.svg" width="48px"> | cust:linkding  |
+| <img src="/Assets/Icons/linktap.svg" width="48px"> | cust:linktap  |
+| <img src="/Assets/Icons/logitech.svg" width="48px"> | cust:logitech  |
+| <img src="/Assets/Icons/mariadb.svg" width="48px"> | cust:mariadb  |
+| <img src="/Assets/Icons/mealie.svg" width="48px"> | cust:mealie  |
+| <img src="/Assets/Icons/music-assistant.svg" width="48px"> | cust:music-assistant  |
+| <img src="/Assets/Icons/node-red.svg" width="48px"> | cust:node-red  |
+| <img src="/Assets/Icons/ntfy.svg" width="48px"> | cust:ntfy  |
+| <img src="/Assets/Icons/octoprint.svg" width="48px"> | cust:octoprint  |
+| <img src="/Assets/Icons/octoprint-alt.svg" width="48px"> | cust:octoprint-alt  |
+| <img src="/Assets/Icons/octopus-energy.svg" width="48px"> | cust:octopus-energy  |
+| <img src="/Assets/Icons/ollama.svg" width="48px"> | cust:ollama  |
+| <img src="/Assets/Icons/omada.svg" width="48px"> | cust:omada  |
+| <img src="/Assets/Icons/openai.svg" width="48px"> | cust:openai  |
+| <img src="/Assets/Icons/paperless.svg" width="48px"> | cust:paperless  |
+| <img src="/Assets/Icons/peanut.svg" width="48px"> | cust:peanut  |
+| <img src="/Assets/Icons/piper.svg" width="48px"> | cust:piper  |
+| <img src="/Assets/Icons/planka.svg" width="48px"> | cust:planka  |
+| <img src="/Assets/Icons/readarr.svg" width="48px"> | cust:readarr  |
+| <img src="/Assets/Icons/ring.svg" width="48px"> | cust:ring  |
+| <img src="/Assets/Icons/romm.svg" width="48px"> | cust:romm  |
+| <img src="/Assets/Icons/sonoff.svg" width="48px"> | cust:sonoff  |
+| <img src="/Assets/Icons/sonos.svg" width="48px"> | cust:sonos  |
+| <img src="/Assets/Icons/synology.svg" width="48px"> | cust:synology  |
+| <img src="/Assets/Icons/synology-dsm.svg" width="48px">  | cust:synology-dsm  |
+| <img src="/Assets/Icons/tado.svg" width="48px"> | cust:tado  |
+| <img src="/Assets/Icons/tasmota.svg" width="48px"> | cust:tasmota  |
+| <img src="/Assets/Icons/tp-link.svg" width="48px"> | cust:tp-link  |
+| <img src="/Assets/Icons/tree-christmas.svg" width="48px"> | cust:tree-christmas  |
+| <img src="/Assets/Icons/vscode.svg" width="48px"> | cust:vscode  |
+| <img src="/Assets/Icons/watchtower.svg" width="48px"> | cust:watchtower  |
+| <img src="/Assets/Icons/wemo.svg" width="48px"> | cust:wemo  |
+| <img src="/Assets/Icons/zigbee2mqtt.svg" width="48px"> | cust:zigbee2mqtt  |
