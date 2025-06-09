@@ -63,6 +63,7 @@ Below are all of the currently available icons in this component and their codes
 | ![fileflows](/Assets/Icons/fileflows.svg)  | cust:fileflows  |
 | ![firetv](/Assets/Icons/firetv.svg)  | cust:firetv  |
 | ![fitbit](/Assets/Icons/fitbit.svg)  | cust:fitbit  |
+| ![get-iplayer](/Assets/Icons/get-iplayer.svg)  | cust:get-iplayer  |
 | ![hass](/Assets/Icons/hass.svg)  | cust:hass  |
 | ![hbo-go](/Assets/Icons/hbo-go.svg) | cust:hbo-go  |
 | ![homepage](/Assets/Icons/homepage.svg) | cust:homepage  |
