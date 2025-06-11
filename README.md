@@ -57,6 +57,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf  |
 | <img src="/Assets/Icons/b&q.svg" width="48px" alt="cust:b&q"> | cust:b&q  |
 | <img src="/Assets/Icons/bazarr.svg" width="48px" alt="cust:bazarr"> | cust:bazarr  |
+| <img src="/Assets/Icons/bbc-micro.svg" width="48px" alt="cust:bbc-micro"> | cust:bbc-micro  |
 | <img src="/Assets/Icons/bitwarden.svg" width="48px" alt="cust:bitwarden">| cust:bitwarden  |
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack">| cust:bookstack  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
