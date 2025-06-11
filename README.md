@@ -106,6 +106,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/piper.svg" width="48px" alt="cust:piper"> | cust:piper  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr  |
+| <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo  |
+| <img src="/Assets/Icons/resideo-alt.svg" width="48px" alt="cust:resideo-alt"> | cust:resideo-alt  |
 | <img src="/Assets/Icons/ring.svg" width="48px" alt="cust:ring"> | cust:ring  |
 | <img src="/Assets/Icons/romm.svg" width="48px" alt="cust:romm"> | cust:romm  |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff  |
