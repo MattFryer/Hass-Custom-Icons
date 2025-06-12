@@ -91,6 +91,9 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/logitech.svg" width="48px" alt="cust:logitech"> | cust:logitech  |
 | <img src="/Assets/Icons/mariadb.svg" width="48px" alt="cust:mariadb"> | cust:mariadb  |
 | <img src="/Assets/Icons/mealie.svg" width="48px" alt="cust:mealie"> | cust:mealie  |
+| <img src="/Assets/Icons/micro-bit.svg" width="48px" alt="cust:micro-bit"> | cust:micro-bit  |
+| <img src="/Assets/Icons/micro-bit-alt.svg" width="48px" alt="cust:micro-bit-alt"> | cust:micro-bit-alt  |
+| <img src="/Assets/Icons/micro-bit-alt2.svg" width="48px" alt="cust:micro-bit-alt2"> | cust:micro-bit-alt2  |
 | <img src="/Assets/Icons/mqtt-explorer.svg" width="48px" alt="cust:mqtt-explorer"> | cust:mqtt-explorer  |
 | <img src="/Assets/Icons/music-assistant.svg" width="48px" alt="cust:music-assistant"> | cust:music-assistant  |
 | <img src="/Assets/Icons/ninja-air-fryer.svg" width="48px" alt="cust:ninja-air-fryer"> | cust:ninja-air-fryer  |
