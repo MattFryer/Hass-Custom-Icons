@@ -1,6 +1,8 @@
 # Home Assistant Additional Icons
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Plugin-Blue?logo=homeassistant&logoColor=%23fff&color=%2303a9f4)](https://www.home-assistant.io/)
+[![HACS](https://img.shields.io/badge/HACS-Custom-Blue?logo=homeassistantcommunitystore&logoColor=%23fff&color=%2303a9f4)](https://github.com/custom-components/hacs)
+[![GitHub Release](https://img.shields.io/github/v/release/MattFryer/Hass-Custom-Icons)](https://github.com/MattFryer/Hass-Custom-Icons/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/MattFryer/Hass-Custom-Icons.svg?logo=gnu&logoColor=ffffff)](https://github.com/MattFryer/Hass-Custom-Icons/blob/master/LICENSE)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/MattFryer/Hass-Custom-Icons)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MattFryer/Hass-Custom-Icons)
@@ -25,7 +27,11 @@ If you just want to show your appreciation, you can sponsor the project or send 
 [<img src="Assets/Readme/github-sponsors-button.svg" height="37px" style="margin: 5px"/>](https://github.com/sponsors/MattFryer)
 
 ## Installation
-It is advised to install via HACS (Home Assistand Community Store).
+It is advised to install this Home Assistant plug-in via HACS (the Home Assistant Community Store). If you have HACS installed already you can click this button to quickly add this repository to HACS and open the page ready to install.
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=MattFryer&repository=Hass-Custom-Icons&category=Dashboard) 
+
+Alternatively, you can follow the below steps to add this repository to HACS manually as a custom repository and install the plug-in:
 1. Ensure HACS is already installed on Home Assistant https://hacs.xyz/docs/use/
 2. In Home Assistant, navigate to **HACS**.
 3. Select the 3 dots icon in the top right and choose **Custom repositories**
