@@ -118,6 +118,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/ring.svg" width="48px" alt="cust:ring"> | cust:ring  |
 | <img src="/Assets/Icons/romm.svg" width="48px" alt="cust:romm"> | cust:romm  |
 | <img src="/Assets/Icons/sainsburys.svg" width="48px" alt="cust:sainsburys"> | cust:sainsburys  |
+| <img src="/Assets/Icons/screwfix.svg" width="48px" alt="cust:screwfix"> | cust:screwfix  |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff  |
 | <img src="/Assets/Icons/sonos.svg" width="48px" alt="cust:sonos"> | cust:sonos  |
 | <img src="/Assets/Icons/synology.svg" width="48px" alt="cust:synology"> | cust:synology  |
