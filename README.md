@@ -98,6 +98,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/linkding.svg" width="48px" alt="cust:linkding"> | cust:linkding  |
 | <img src="/Assets/Icons/linktap.svg" width="48px" alt="cust:linktap"> | cust:linktap  |
 | <img src="/Assets/Icons/logitech.svg" width="48px" alt="cust:logitech"> | cust:logitech  |
+| <img src="/Assets/Icons/m&s.svg" width="48px" alt="cust:m&s"> | cust:m&s  |
 | <img src="/Assets/Icons/mariadb.svg" width="48px" alt="cust:mariadb"> | cust:mariadb  |
 | <img src="/Assets/Icons/mealie.svg" width="48px" alt="cust:mealie"> | cust:mealie  |
 | <img src="/Assets/Icons/micro-bit.svg" width="48px" alt="cust:micro-bit"> | cust:micro-bit  |
