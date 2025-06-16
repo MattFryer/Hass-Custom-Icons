@@ -72,6 +72,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/draw-io.svg" width="48px" alt="cust:draw-io"> | cust:draw-io  |
 | <img src="/Assets/Icons/esphome.svg" width="48px" alt="cust:esphome"> | cust:esphome  |
+| <img src="/Assets/Icons/evri.svg" width="48px" alt="cust:evri"> | cust:evri  |
 | <img src="/Assets/Icons/extractor-hood.svg" width="48px" alt=" cust:extractor-hood"> | cust:extractor-hood  |
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
@@ -106,10 +107,12 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/micro-bit-alt2.svg" width="48px" alt="cust:micro-bit-alt2"> | cust:micro-bit-alt2  |
 | <img src="/Assets/Icons/mqtt-explorer.svg" width="48px" alt="cust:mqtt-explorer"> | cust:mqtt-explorer  |
 | <img src="/Assets/Icons/music-assistant.svg" width="48px" alt="cust:music-assistant"> | cust:music-assistant  |
+| <img src="/Assets/Icons/network-ups-tools.svg" width="48px" alt="cust:network-ups-tools"> | cust:network-ups-tools  |
 | <img src="/Assets/Icons/nhs.svg" width="48px" alt="cust:nhs"> | cust:nhs  |
 | <img src="/Assets/Icons/ninja-air-fryer.svg" width="48px" alt="cust:ninja-air-fryer"> | cust:ninja-air-fryer  |
 | <img src="/Assets/Icons/node-red.svg" width="48px" alt="cust:node-red"> | cust:node-red  |
 | <img src="/Assets/Icons/ntfy.svg" width="48px" alt="cust:ntfy"> | cust:ntfy  |
+| <img src="/Assets/Icons/nuaire.svg" width="48px" alt="cust:nuaire"> | cust:nuaire  |
 | <img src="/Assets/Icons/octoprint.svg" width="48px" alt="cust:octoprint"> | cust:octoprint  |
 | <img src="/Assets/Icons/octoprint-alt.svg" width="48px" alt="cust:octoprint-alt"> | cust:octoprint-alt  |
 | <img src="/Assets/Icons/octopus-energy.svg" width="48px" alt="cust:octopus-energy"> | cust:octopus-energy  |
@@ -137,6 +140,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/toolstation.svg" width="48px" alt="cust:toolstation"> | cust:toolstation  |
 | <img src="/Assets/Icons/tp-link.svg" width="48px" alt="cust:tp-link"> | cust:tp-link  |
 | <img src="/Assets/Icons/tree-christmas.svg" width="48px" alt="cust:tree-christmas"> | cust:tree-christmas  |
+| <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
