@@ -73,6 +73,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/draw-io.svg" width="48px" alt="cust:draw-io"> | cust:draw-io  |
 | <img src="/Assets/Icons/esphome.svg" width="48px" alt="cust:esphome"> | cust:esphome  |
+| <img src="/Assets/Icons/eufy.svg" width="48px" alt="cust:eufy"> | cust:eufy  |
+| <img src="/Assets/Icons/eufy-alt.svg" width="48px" alt="cust:eufy-alt"> | cust:eufy-alt  |
 | <img src="/Assets/Icons/evri.svg" width="48px" alt="cust:evri"> | cust:evri  |
 | <img src="/Assets/Icons/extractor-hood.svg" width="48px" alt=" cust:extractor-hood"> | cust:extractor-hood  |
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
