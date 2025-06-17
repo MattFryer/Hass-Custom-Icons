@@ -97,6 +97,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px" alt="cust:layzspa-bubbles"> | cust:layzspa-bubbles |
 | <img src="/Assets/Icons/layzspa-heat.svg" width="48px" alt="cust:layzspa-heat"> | cust:layzspa-heat  |
 | <img src="/Assets/Icons/layzspa-pump.svg" width="48px" alt="cust:layzspa-pump"> | cust:layzspa-pump  |
+| <img src="/Assets/Icons/lg.svg" width="48px" alt="cust:lg"> | cust:lg  |
+| <img src="/Assets/Icons/lg-alt.svg" width="48px" alt="cust:lg-alt"> | cust:lg-alt  |
 | <img src="/Assets/Icons/lg-thinq.svg" width="48px" alt="cust:lg-thinq"> | cust:lg-thinq  |
 | <img src="/Assets/Icons/linkding.svg" width="48px" alt="cust:linkding"> | cust:linkding  |
 | <img src="/Assets/Icons/linktap.svg" width="48px" alt="cust:linktap"> | cust:linktap  |
