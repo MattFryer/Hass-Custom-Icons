@@ -129,6 +129,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless  |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut  |
 | <img src="/Assets/Icons/piper.svg" width="48px" alt="cust:piper"> | cust:piper  |
+| <img src="/Assets/Icons/piv.svg" width="48px" alt="cust:piv"> | cust:piv  |
+| <img src="/Assets/Icons/piv-alt.svg" width="48px" alt="cust:piv-alt"> | cust:piv-alt  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr  |
 | <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo  |
