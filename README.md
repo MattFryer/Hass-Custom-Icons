@@ -56,6 +56,7 @@ Below are all of the currently available icons in this component and their codes
 
 | Icon          | Code          |
 | ------------- | ------------- |
+| <img src="/Assets/Icons/air-up.svg" width="48px" alt="cust:air-up"> | cust:air-up  |
 | <img src="/Assets/Icons/aldi.svg" width="48px" alt="cust:aldi"> | cust:aldi  |
 | <img src="/Assets/Icons/alexa.svg" width="48px" alt="cust:alexa"> | cust:alexa  |
 | <img src="/Assets/Icons/alexa-plus.svg" width="48px" alt="cust:alexa-plus"> | cust:alexa-plus  |
