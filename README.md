@@ -132,9 +132,11 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/ollama.svg" width="48px" alt="cust:ollama"> | cust:ollama  |
 | <img src="/Assets/Icons/omada.svg" width="48px" alt="cust:omada"> | cust:omada  |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai  |
+| <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt  |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless  |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut  |
 | <img src="/Assets/Icons/piper.svg" width="48px" alt="cust:piper"> | cust:piper  |
+| <img src="/Assets/Icons/piper-alt.svg" width="48px" alt="cust:piper-alt"> | cust:piper-alt  |
 | <img src="/Assets/Icons/piv.svg" width="48px" alt="cust:piv"> | cust:piv  |
 | <img src="/Assets/Icons/piv-alt.svg" width="48px" alt="cust:piv-alt"> | cust:piv-alt  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
@@ -156,8 +158,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/toolstation.svg" width="48px" alt="cust:toolstation"> | cust:toolstation  |
 | <img src="/Assets/Icons/tp-link.svg" width="48px" alt="cust:tp-link"> | cust:tp-link  |
 | <img src="/Assets/Icons/tree-christmas.svg" width="48px" alt="cust:tree-christmas"> | cust:tree-christmas  |
-| <img src="/Assets/Icons/unify.svg" width="48px" alt="cust:unify"> | cust:unify  |
-| <img src="/Assets/Icons/unify-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
+| <img src="/Assets/Icons/unifi.svg" width="48px" alt="cust:unify"> | cust:unify  |
+| <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
 | <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
