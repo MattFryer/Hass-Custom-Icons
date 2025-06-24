@@ -120,6 +120,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/network-ups-tools.svg" width="48px" alt="cust:network-ups-tools"> | cust:network-ups-tools  |
 | <img src="/Assets/Icons/nhs.svg" width="48px" alt="cust:nhs"> | cust:nhs  |
 | <img src="/Assets/Icons/ninja-air-fryer.svg" width="48px" alt="cust:ninja-air-fryer"> | cust:ninja-air-fryer  |
+| <img src="/Assets/Icons/nintendo-switch-2.svg" width="48px" alt="cust:nintendo-switch-2"> | cust:nintendo-switch-2  |
+| <img src="/Assets/Icons/nintendo-switch-2-alt.svg" width="48px" alt="cust:nintendo-switch-2-alt"> | cust:nintendo-switch-2-alt  |
 | <img src="/Assets/Icons/node-red.svg" width="48px" alt="cust:node-red"> | cust:node-red  |
 | <img src="/Assets/Icons/ntfy.svg" width="48px" alt="cust:ntfy"> | cust:ntfy  |
 | <img src="/Assets/Icons/nuaire.svg" width="48px" alt="cust:nuaire"> | cust:nuaire  |
