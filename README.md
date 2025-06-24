@@ -147,6 +147,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/screwfix.svg" width="48px" alt="cust:screwfix"> | cust:screwfix  |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff  |
 | <img src="/Assets/Icons/sonos.svg" width="48px" alt="cust:sonos"> | cust:sonos  |
+| <img src="/Assets/Icons/stirling-pdf.svg" width="48px" alt="cust:stirling-pdf"> | cust:stirling-pdf  |
 | <img src="/Assets/Icons/synology.svg" width="48px" alt="cust:synology"> | cust:synology  |
 | <img src="/Assets/Icons/synology-dsm.svg" width="48px" alt="cust:synology-dsm">  | cust:synology-dsm  |
 | <img src="/Assets/Icons/tado.svg" width="48px" alt="cust:tado "> | cust:tado  |
