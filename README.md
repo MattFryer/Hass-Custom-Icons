@@ -161,6 +161,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/unifi.svg" width="48px" alt="cust:unify"> | cust:unify  |
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
 | <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
+| <img src="/Assets/Icons/vaultwarden-alt.svg" width="48px" alt="cust:vaultwarden-alt"> | cust:vaultwarden-alt  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
