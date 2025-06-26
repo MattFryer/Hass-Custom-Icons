@@ -90,6 +90,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/gramps-web.svg" width="48px" alt="cust:gramps-web"> | cust:gramps-web  |
 | <img src="/Assets/Icons/hass.svg" width="48px" alt="cust:hass"> | cust:hass  |
 | <img src="/Assets/Icons/hbo-go.svg" width="48px" alt="cust:hbo-go">| cust:hbo-go  |
+| <img src="/Assets/Icons/home-connect.svg" width="48px" alt="cust:home-connect"> | cust:home-connect  |
+| <img src="/Assets/Icons/home-connect-alt.svg" width="48px" alt="cust:home-connect-alt"> | cust:home-connect-alt  |
 | <img src="/Assets/Icons/homepage.svg" width="48px" alt="cust:homepage">| cust:homepage  |
 | <img src="/Assets/Icons/honeywell.svg" width="48px" alt="cust:honeywell">| cust:honeywell  |
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt">| cust:honeywell-alt  |
