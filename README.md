@@ -73,6 +73,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack">| cust:bookstack  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
+| <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/disney-plus-alt.svg" width="48px" alt="cust:disney-plus-alt"> | cust:disney-plus-alt  |
@@ -163,6 +164,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
 | <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
 | <img src="/Assets/Icons/vaultwarden-alt.svg" width="48px" alt="cust:vaultwarden-alt"> | cust:vaultwarden-alt  |
+| <img src="/Assets/Icons/virgin-media.svg" width="48px" alt="cust:virgin-media "> | cust:virgin-media  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
