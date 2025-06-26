@@ -84,8 +84,11 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
 | <img src="/Assets/Icons/fitbit.svg" width="48px" alt="cust:fitbit"> | cust:fitbit  |
+| <img src="/Assets/Icons/freevee.svg" width="48px" alt="cust:freevee"> | cust:freevee  |
 | <img src="/Assets/Icons/get-iplayer.svg" width="48px" alt="cust:get-iplayer"> | cust:get-iplayer  |
 | <img src="/Assets/Icons/gramps-web.svg" width="48px" alt="cust:gramps-web"> | cust:gramps-web  |
+| <img src="/Assets/Icons/grubhub.svg" width="48px" alt="cust:grubhub"> | cust:grubhub  |
+| <img src="/Assets/Icons/grubhub-alt.svg" width="48px" alt="cust:grubhub-alt"> | cust:grubhub-alt  |
 | <img src="/Assets/Icons/hass.svg" width="48px" alt="cust:hass"> | cust:hass  |
 | <img src="/Assets/Icons/hbo-go.svg" width="48px" alt="cust:hbo-go">| cust:hbo-go  |
 | <img src="/Assets/Icons/homepage.svg" width="48px" alt="cust:homepage">| cust:homepage  |
