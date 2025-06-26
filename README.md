@@ -60,6 +60,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/aldi.svg" width="48px" alt="cust:aldi"> | cust:aldi  |
 | <img src="/Assets/Icons/alexa.svg" width="48px" alt="cust:alexa"> | cust:alexa  |
 | <img src="/Assets/Icons/alexa-plus.svg" width="48px" alt="cust:alexa-plus"> | cust:alexa-plus  |
+| <img src="/Assets/Icons/apollo-automation.svg" width="48px" alt="cust:apollo-automation"> | cust:apollo-automation  |
 | <img src="/Assets/Icons/apple-tv.svg" width="48px" alt="cust:apple-tv"> | cust:apple-tv  |
 | <img src="/Assets/Icons/apple-tv-plus.svg" width="48px" alt="cust:apple-tv-plus"> | cust:apple-tv-plus  |
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf  |
@@ -72,6 +73,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack">| cust:bookstack  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
+| <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/disney-plus-alt.svg" width="48px" alt="cust:disney-plus-alt"> | cust:disney-plus-alt  |
@@ -91,6 +93,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/grubhub-alt.svg" width="48px" alt="cust:grubhub-alt"> | cust:grubhub-alt  |
 | <img src="/Assets/Icons/hass.svg" width="48px" alt="cust:hass"> | cust:hass  |
 | <img src="/Assets/Icons/hbo-go.svg" width="48px" alt="cust:hbo-go">| cust:hbo-go  |
+| <img src="/Assets/Icons/home-connect.svg" width="48px" alt="cust:home-connect"> | cust:home-connect  |
+| <img src="/Assets/Icons/home-connect-alt.svg" width="48px" alt="cust:home-connect-alt"> | cust:home-connect-alt  |
 | <img src="/Assets/Icons/homepage.svg" width="48px" alt="cust:homepage">| cust:homepage  |
 | <img src="/Assets/Icons/honeywell.svg" width="48px" alt="cust:honeywell">| cust:honeywell  |
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt">| cust:honeywell-alt  |
@@ -165,6 +169,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
 | <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
 | <img src="/Assets/Icons/vaultwarden-alt.svg" width="48px" alt="cust:vaultwarden-alt"> | cust:vaultwarden-alt  |
+| <img src="/Assets/Icons/virgin-media.svg" width="48px" alt="cust:virgin-media "> | cust:virgin-media  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
