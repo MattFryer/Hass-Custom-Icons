@@ -87,6 +87,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
 | <img src="/Assets/Icons/fitbit.svg" width="48px" alt="cust:fitbit"> | cust:fitbit  |
 | <img src="/Assets/Icons/freevee.svg" width="48px" alt="cust:freevee"> | cust:freevee  |
+| <img src="/Assets/Icons/freeview.svg" width="48px" alt="cust:freeview"> | cust:freeview  |
+| <img src="/Assets/Icons/freeview-alt.svg" width="48px" alt="cust:freeview-alt"> | cust:freeview-alt  |
 | <img src="/Assets/Icons/get-iplayer.svg" width="48px" alt="cust:get-iplayer"> | cust:get-iplayer  |
 | <img src="/Assets/Icons/gramps-web.svg" width="48px" alt="cust:gramps-web"> | cust:gramps-web  |
 | <img src="/Assets/Icons/grubhub.svg" width="48px" alt="cust:grubhub"> | cust:grubhub  |
