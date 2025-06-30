@@ -90,7 +90,6 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/get-iplayer.svg" width="48px" alt="cust:get-iplayer"> | cust:get-iplayer  |
 | <img src="/Assets/Icons/gramps-web.svg" width="48px" alt="cust:gramps-web"> | cust:gramps-web  |
 | <img src="/Assets/Icons/grubhub.svg" width="48px" alt="cust:grubhub"> | cust:grubhub  |
-| <img src="/Assets/Icons/grubhub-alt.svg" width="48px" alt="cust:grubhub-alt"> | cust:grubhub-alt  |
 | <img src="/Assets/Icons/hass.svg" width="48px" alt="cust:hass"> | cust:hass  |
 | <img src="/Assets/Icons/hbo-go.svg" width="48px" alt="cust:hbo-go">| cust:hbo-go  |
 | <img src="/Assets/Icons/home-connect.svg" width="48px" alt="cust:home-connect"> | cust:home-connect  |
@@ -105,6 +104,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools  |
 | <img src="/Assets/Icons/jellyseerr.svg" width="48px" alt="cust:jellyseerr"> | cust:jellyseerr  |
 | <img src="/Assets/Icons/jellystat.svg" width="48px" alt="cust:jellystat"> | cust:jellystat  |
+| <img src="/Assets/Icons/just-eat.svg" width="48px" alt="cust:just-eat"> | cust:just-eat  |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart  |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle  |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
