@@ -71,6 +71,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bbc-sounds-alt.svg" width="48px" alt="cust:bbc-sounds-alt"> | cust:bbc-sounds-alt  |
 | <img src="/Assets/Icons/bitwarden.svg" width="48px" alt="cust:bitwarden">| cust:bitwarden  |
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack">| cust:bookstack  |
+| <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths">| cust:booths  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
