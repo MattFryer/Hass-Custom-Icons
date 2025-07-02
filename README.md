@@ -63,6 +63,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/apollo-automation.svg" width="48px" alt="cust:apollo-automation"> | cust:apollo-automation  |
 | <img src="/Assets/Icons/apple-tv.svg" width="48px" alt="cust:apple-tv"> | cust:apple-tv  |
 | <img src="/Assets/Icons/apple-tv-plus.svg" width="48px" alt="cust:apple-tv-plus"> | cust:apple-tv-plus  |
+| <img src="/Assets/Icons/arlo.svg" width="48px" alt="cust:arlo"> | cust:arlo  |
+| <img src="/Assets/Icons/arlo-alt.svg" width="48px" alt="cust:arlo-alt"> | cust:arlo-alt  |
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf  |
 | <img src="/Assets/Icons/b&q.svg" width="48px" alt="cust:b&q"> | cust:b&q  |
 | <img src="/Assets/Icons/bazarr.svg" width="48px" alt="cust:bazarr"> | cust:bazarr  |
