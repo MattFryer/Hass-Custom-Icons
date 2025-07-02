@@ -86,8 +86,10 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/esphome.svg" width="48px" alt="cust:esphome"> | cust:esphome  |
 | <img src="/Assets/Icons/eufy.svg" width="48px" alt="cust:eufy"> | cust:eufy  |
 | <img src="/Assets/Icons/eufy-alt.svg" width="48px" alt="cust:eufy-alt"> | cust:eufy-alt  |
+| <img src="/Assets/Icons/everything-smart-tech.svg" width="48px" alt="cust:everything-smart-tech"> | cust:everything-smart-tech  |
 | <img src="/Assets/Icons/evri.svg" width="48px" alt="cust:evri"> | cust:evri  |
 | <img src="/Assets/Icons/extractor-hood.svg" width="48px" alt=" cust:extractor-hood"> | cust:extractor-hood  |
+| <img src="/Assets/Icons/farmfoods.svg" width="48px" alt="cust:farmfoods"> | cust:farmfoods  |
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
 | <img src="/Assets/Icons/fitbit.svg" width="48px" alt="cust:fitbit"> | cust:fitbit  |
@@ -141,6 +143,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/node-red.svg" width="48px" alt="cust:node-red"> | cust:node-red  |
 | <img src="/Assets/Icons/ntfy.svg" width="48px" alt="cust:ntfy"> | cust:ntfy  |
 | <img src="/Assets/Icons/nuaire.svg" width="48px" alt="cust:nuaire"> | cust:nuaire  |
+| <img src="/Assets/Icons/ocado.svg" width="48px" alt="cust:ocado"> | cust:ocado  |
+| <img src="/Assets/Icons/ocado-alt.svg" width="48px" alt="cust:ocado-alt"> | cust:ocado-alt  |
 | <img src="/Assets/Icons/octoprint.svg" width="48px" alt="cust:octoprint"> | cust:octoprint  |
 | <img src="/Assets/Icons/octoprint-alt.svg" width="48px" alt="cust:octoprint-alt"> | cust:octoprint-alt  |
 | <img src="/Assets/Icons/octopus-energy.svg" width="48px" alt="cust:octopus-energy"> | cust:octopus-energy  |
