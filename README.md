@@ -85,6 +85,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/eufy-alt.svg" width="48px" alt="cust:eufy-alt"> | cust:eufy-alt  |
 | <img src="/Assets/Icons/evri.svg" width="48px" alt="cust:evri"> | cust:evri  |
 | <img src="/Assets/Icons/extractor-hood.svg" width="48px" alt=" cust:extractor-hood"> | cust:extractor-hood  |
+| <img src="/Assets/Icons/farmfoods.svg" width="48px" alt="cust:farmfoods"> | cust:farmfoods  |
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
 | <img src="/Assets/Icons/fitbit.svg" width="48px" alt="cust:fitbit"> | cust:fitbit  |
