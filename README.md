@@ -160,6 +160,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/piv.svg" width="48px" alt="cust:piv"> | cust:piv  |
 | <img src="/Assets/Icons/piv-alt.svg" width="48px" alt="cust:piv-alt"> | cust:piv-alt  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
+| <img src="/Assets/Icons/power-bi.svg" width="48px" alt="cust:power-bi "> | cust:power-bi  |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr  |
 | <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo  |
 | <img src="/Assets/Icons/resideo-alt.svg" width="48px" alt="cust:resideo-alt"> | cust:resideo-alt  |
