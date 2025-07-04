@@ -107,6 +107,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/homepage.svg" width="48px" alt="cust:homepage">| cust:homepage  |
 | <img src="/Assets/Icons/honeywell.svg" width="48px" alt="cust:honeywell">| cust:honeywell  |
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt">| cust:honeywell-alt  |
+| <img src="/Assets/Icons/honeywell-home.svg" width="48px" alt="cust:honeywell-home">| cust:honeywell-home  |
 | <img src="/Assets/Icons/hp.svg" width="48px" alt="cust:hp ">| cust:hp  |
 | <img src="/Assets/Icons/influxdb.svg" width="48px" alt="cust:influxdb"> | cust:influxdb  |
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer  |
