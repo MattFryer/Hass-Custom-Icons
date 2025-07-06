@@ -187,6 +187,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/virgin-media.svg" width="48px" alt="cust:virgin-media "> | cust:virgin-media  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
+| <img src="/Assets/Icons/wallos.svg" width="48px" alt="cust:wallos"> | cust:wallos  |
+| <img src="/Assets/Icons/wallos-alt.svg" width="48px" alt="cust:wallos-alt"> | cust:wallos-alt  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
 | <img src="/Assets/Icons/wemo.svg" width="48px" alt="cust:wemo"> | cust:wemo  |
 | <img src="/Assets/Icons/zigbee2mqtt.svg" width="48px" alt="cust:zigbee2mqtt"> | cust:zigbee2mqtt  |
