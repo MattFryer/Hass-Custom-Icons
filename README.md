@@ -60,8 +60,11 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/aldi.svg" width="48px" alt="cust:aldi"> | cust:aldi  |
 | <img src="/Assets/Icons/alexa.svg" width="48px" alt="cust:alexa"> | cust:alexa  |
 | <img src="/Assets/Icons/alexa-plus.svg" width="48px" alt="cust:alexa-plus"> | cust:alexa-plus  |
+| <img src="/Assets/Icons/apollo-automation.svg" width="48px" alt="cust:apollo-automation"> | cust:apollo-automation  |
 | <img src="/Assets/Icons/apple-tv.svg" width="48px" alt="cust:apple-tv"> | cust:apple-tv  |
 | <img src="/Assets/Icons/apple-tv-plus.svg" width="48px" alt="cust:apple-tv-plus"> | cust:apple-tv-plus  |
+| <img src="/Assets/Icons/arlo.svg" width="48px" alt="cust:arlo"> | cust:arlo  |
+| <img src="/Assets/Icons/arlo-alt.svg" width="48px" alt="cust:arlo-alt"> | cust:arlo-alt  |
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf  |
 | <img src="/Assets/Icons/b&q.svg" width="48px" alt="cust:b&q"> | cust:b&q  |
 | <img src="/Assets/Icons/bazarr.svg" width="48px" alt="cust:bazarr"> | cust:bazarr  |
@@ -70,27 +73,41 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bbc-sounds-alt.svg" width="48px" alt="cust:bbc-sounds-alt"> | cust:bbc-sounds-alt  |
 | <img src="/Assets/Icons/bitwarden.svg" width="48px" alt="cust:bitwarden">| cust:bitwarden  |
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack">| cust:bookstack  |
+| <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths">| cust:booths  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
+| <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/disney-plus-alt.svg" width="48px" alt="cust:disney-plus-alt"> | cust:disney-plus-alt  |
 | <img src="/Assets/Icons/draw-io.svg" width="48px" alt="cust:draw-io"> | cust:draw-io  |
+| <img src="/Assets/Icons/dreamworks.svg" width="48px" alt="cust:dreamworks"> | cust:dreamworks  |
+| <img src="/Assets/Icons/dreamworks-alt.svg" width="48px" alt="cust:dreamworks-alt"> | cust:dreamworks-alt  |
 | <img src="/Assets/Icons/esphome.svg" width="48px" alt="cust:esphome"> | cust:esphome  |
 | <img src="/Assets/Icons/eufy.svg" width="48px" alt="cust:eufy"> | cust:eufy  |
 | <img src="/Assets/Icons/eufy-alt.svg" width="48px" alt="cust:eufy-alt"> | cust:eufy-alt  |
+| <img src="/Assets/Icons/everything-smart-tech.svg" width="48px" alt="cust:everything-smart-tech"> | cust:everything-smart-tech  |
 | <img src="/Assets/Icons/evri.svg" width="48px" alt="cust:evri"> | cust:evri  |
 | <img src="/Assets/Icons/extractor-hood.svg" width="48px" alt=" cust:extractor-hood"> | cust:extractor-hood  |
+| <img src="/Assets/Icons/farmfoods.svg" width="48px" alt="cust:farmfoods"> | cust:farmfoods  |
 | <img src="/Assets/Icons/fileflows.svg" width="48px" alt="cust:fileflows"> | cust:fileflows  |
 | <img src="/Assets/Icons/firetv.svg" width="48px" alt="cust:firetv"> | cust:firetv  |
 | <img src="/Assets/Icons/fitbit.svg" width="48px" alt="cust:fitbit"> | cust:fitbit  |
+| <img src="/Assets/Icons/freevee.svg" width="48px" alt="cust:freevee"> | cust:freevee  |
+| <img src="/Assets/Icons/freeview.svg" width="48px" alt="cust:freeview"> | cust:freeview  |
+| <img src="/Assets/Icons/freeview-alt.svg" width="48px" alt="cust:freeview-alt"> | cust:freeview-alt  |
+| <img src="/Assets/Icons/genesis.svg" width="48px" alt="cust:genesis"> | cust:genesis  |
 | <img src="/Assets/Icons/get-iplayer.svg" width="48px" alt="cust:get-iplayer"> | cust:get-iplayer  |
 | <img src="/Assets/Icons/gramps-web.svg" width="48px" alt="cust:gramps-web"> | cust:gramps-web  |
+| <img src="/Assets/Icons/grubhub.svg" width="48px" alt="cust:grubhub"> | cust:grubhub  |
 | <img src="/Assets/Icons/hass.svg" width="48px" alt="cust:hass"> | cust:hass  |
 | <img src="/Assets/Icons/hbo-go.svg" width="48px" alt="cust:hbo-go">| cust:hbo-go  |
+| <img src="/Assets/Icons/home-connect.svg" width="48px" alt="cust:home-connect"> | cust:home-connect  |
+| <img src="/Assets/Icons/home-connect-alt.svg" width="48px" alt="cust:home-connect-alt"> | cust:home-connect-alt  |
 | <img src="/Assets/Icons/homepage.svg" width="48px" alt="cust:homepage">| cust:homepage  |
 | <img src="/Assets/Icons/honeywell.svg" width="48px" alt="cust:honeywell">| cust:honeywell  |
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt">| cust:honeywell-alt  |
+| <img src="/Assets/Icons/honeywell-home.svg" width="48px" alt="cust:honeywell-home">| cust:honeywell-home  |
 | <img src="/Assets/Icons/hp.svg" width="48px" alt="cust:hp ">| cust:hp  |
 | <img src="/Assets/Icons/influxdb.svg" width="48px" alt="cust:influxdb"> | cust:influxdb  |
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer  |
@@ -98,6 +115,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools  |
 | <img src="/Assets/Icons/jellyseerr.svg" width="48px" alt="cust:jellyseerr"> | cust:jellyseerr  |
 | <img src="/Assets/Icons/jellystat.svg" width="48px" alt="cust:jellystat"> | cust:jellystat  |
+| <img src="/Assets/Icons/just-eat.svg" width="48px" alt="cust:just-eat"> | cust:just-eat  |
+| <img src="/Assets/Icons/just-eat-alt.svg" width="48px" alt="cust:just-eat-alt"> | cust:just-eat-alt  |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart  |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle  |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
@@ -126,6 +145,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/node-red.svg" width="48px" alt="cust:node-red"> | cust:node-red  |
 | <img src="/Assets/Icons/ntfy.svg" width="48px" alt="cust:ntfy"> | cust:ntfy  |
 | <img src="/Assets/Icons/nuaire.svg" width="48px" alt="cust:nuaire"> | cust:nuaire  |
+| <img src="/Assets/Icons/ocado.svg" width="48px" alt="cust:ocado"> | cust:ocado  |
+| <img src="/Assets/Icons/ocado-alt.svg" width="48px" alt="cust:ocado-alt"> | cust:ocado-alt  |
 | <img src="/Assets/Icons/octoprint.svg" width="48px" alt="cust:octoprint"> | cust:octoprint  |
 | <img src="/Assets/Icons/octoprint-alt.svg" width="48px" alt="cust:octoprint-alt"> | cust:octoprint-alt  |
 | <img src="/Assets/Icons/octopus-energy.svg" width="48px" alt="cust:octopus-energy"> | cust:octopus-energy  |
@@ -140,6 +161,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/piv.svg" width="48px" alt="cust:piv"> | cust:piv  |
 | <img src="/Assets/Icons/piv-alt.svg" width="48px" alt="cust:piv-alt"> | cust:piv-alt  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
+| <img src="/Assets/Icons/power-bi.svg" width="48px" alt="cust:power-bi "> | cust:power-bi  |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr  |
 | <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo  |
 | <img src="/Assets/Icons/resideo-alt.svg" width="48px" alt="cust:resideo-alt"> | cust:resideo-alt  |
@@ -162,8 +184,11 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
 | <img src="/Assets/Icons/vaultwarden.svg" width="48px" alt="cust:vaultwarden"> | cust:vaultwarden  |
 | <img src="/Assets/Icons/vaultwarden-alt.svg" width="48px" alt="cust:vaultwarden-alt"> | cust:vaultwarden-alt  |
+| <img src="/Assets/Icons/virgin-media.svg" width="48px" alt="cust:virgin-media "> | cust:virgin-media  |
 | <img src="/Assets/Icons/vscode.svg" width="48px" alt="cust:vscode "> | cust:vscode  |
 | <img src="/Assets/Icons/waitrose.svg" width="48px" alt="cust:waitrose"> | cust:waitrose  |
+| <img src="/Assets/Icons/wallos.svg" width="48px" alt="cust:wallos"> | cust:wallos  |
+| <img src="/Assets/Icons/wallos-alt.svg" width="48px" alt="cust:wallos-alt"> | cust:wallos-alt  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
 | <img src="/Assets/Icons/wemo.svg" width="48px" alt="cust:wemo"> | cust:wemo  |
 | <img src="/Assets/Icons/zigbee2mqtt.svg" width="48px" alt="cust:zigbee2mqtt"> | cust:zigbee2mqtt  |
