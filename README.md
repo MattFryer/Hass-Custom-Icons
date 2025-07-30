@@ -78,6 +78,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
+| <img src="/Assets/Icons/dewalt.svg" width="48px" alt="cust:dewalt"> | cust:dewalt  |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/disney-plus-alt.svg" width="48px" alt="cust:disney-plus-alt"> | cust:disney-plus-alt  |
 | <img src="/Assets/Icons/draw-io.svg" width="48px" alt="cust:draw-io"> | cust:draw-io  |
