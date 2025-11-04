@@ -122,6 +122,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/just-eat-alt.svg" width="48px" alt="cust:just-eat-alt"> | cust:just-eat-alt  |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart  |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle  |
+| <img src="/Assets/Icons/kopia.svg" width="48px" alt="cust:kopia"> | cust:kopia  |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
 | <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px" alt="cust:layzspa-bubbles"> | cust:layzspa-bubbles |
 | <img src="/Assets/Icons/layzspa-heat.svg" width="48px" alt="cust:layzspa-heat"> | cust:layzspa-heat  |
@@ -158,6 +159,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/omada.svg" width="48px" alt="cust:omada"> | cust:omada  |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai  |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt  |
+| <img src="/Assets/Icons/pangolin.svg" width="48px" alt="cust:pangolin"> | cust:pangolin  |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless  |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut  |
 | <img src="/Assets/Icons/piper.svg" width="48px" alt="cust:piper"> | cust:piper  |
