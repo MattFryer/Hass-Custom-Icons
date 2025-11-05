@@ -185,6 +185,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/synology-dsm.svg" width="48px" alt="cust:synology-dsm">  | cust:synology-dsm  |
 | <img src="/Assets/Icons/tado.svg" width="48px" alt="cust:tado "> | cust:tado  |
 | <img src="/Assets/Icons/tasmota.svg" width="48px" alt="cust:tasmota"> | cust:tasmota  |
+| <img src="/Assets/Icons/tautulli.svg" width="48px" alt="cust:tautulli"> | cust:tautulli  |
 | <img src="/Assets/Icons/tesco.svg" width="48px" alt="cust:tesco"> | cust:tesco  |
 | <img src="/Assets/Icons/toolstation.svg" width="48px" alt="cust:toolstation"> | cust:toolstation  |
 | <img src="/Assets/Icons/tp-link.svg" width="48px" alt="cust:tp-link"> | cust:tp-link  |
