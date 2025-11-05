@@ -198,4 +198,5 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/wallos-alt.svg" width="48px" alt="cust:wallos-alt"> | cust:wallos-alt  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
 | <img src="/Assets/Icons/wemo.svg" width="48px" alt="cust:wemo"> | cust:wemo  |
+| <img src="/Assets/Icons/wireguard.svg" width="48px" alt="cust:wireguard"> | cust:wireguard  |
 | <img src="/Assets/Icons/zigbee2mqtt.svg" width="48px" alt="cust:zigbee2mqtt"> | cust:zigbee2mqtt  |
