@@ -76,6 +76,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths">| cust:booths  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
+| <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora  |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
 | <img src="/Assets/Icons/dewalt.svg" width="48px" alt="cust:dewalt"> | cust:dewalt  |
