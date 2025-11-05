@@ -116,6 +116,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer  |
 | <img src="/Assets/Icons/iplayer-alt.svg" width="48px" alt="cust:iplayer-alt"> | cust:iplayer-alt  |
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools  |
+| <img src="/Assets/Icons/jackett.svg" width="48px" alt="cust:jackett"> | cust:jackett  |
 | <img src="/Assets/Icons/jellyseerr.svg" width="48px" alt="cust:jellyseerr"> | cust:jellyseerr  |
 | <img src="/Assets/Icons/jellystat.svg" width="48px" alt="cust:jellystat"> | cust:jellystat  |
 | <img src="/Assets/Icons/just-eat.svg" width="48px" alt="cust:just-eat"> | cust:just-eat  |
