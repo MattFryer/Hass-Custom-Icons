@@ -159,6 +159,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/omada.svg" width="48px" alt="cust:omada"> | cust:omada  |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai  |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt  |
+| <img src="/Assets/Icons/open-webui.svg" width="48px" alt="cust:open-webui"> | cust:open-webui  |
 | <img src="/Assets/Icons/pangolin.svg" width="48px" alt="cust:pangolin"> | cust:pangolin  |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless  |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut  |
