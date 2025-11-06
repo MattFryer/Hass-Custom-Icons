@@ -159,6 +159,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/octopus-energy.svg" width="48px" alt="cust:octopus-energy"> | cust:octopus-energy  |
 | <img src="/Assets/Icons/ollama.svg" width="48px" alt="cust:ollama"> | cust:ollama  |
 | <img src="/Assets/Icons/omada.svg" width="48px" alt="cust:omada"> | cust:omada  |
+| <img src="/Assets/Icons/omni-tools.svg" width="48px" alt="cust:omni-tools"> | cust:omni-tools  |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai  |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt  |
 | <img src="/Assets/Icons/open-webui.svg" width="48px" alt="cust:open-webui"> | cust:open-webui  |
