@@ -192,6 +192,10 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/tesco.svg" width="48px" alt="cust:tesco"> | cust:tesco  |
 | <img src="/Assets/Icons/toolstation.svg" width="48px" alt="cust:toolstation"> | cust:toolstation  |
 | <img src="/Assets/Icons/tp-link.svg" width="48px" alt="cust:tp-link"> | cust:tp-link  |
+| <img src="/Assets/Icons/traefik.svg" width="48px" alt="cust:traefik"> | cust:traefik  |
+| <img src="/Assets/Icons/traefik-alt.svg" width="48px" alt="cust:traefik-alt"> | cust:traefik-alt  |
+| <img src="/Assets/Icons/traefik-proxy.svg" width="48px" alt="cust:traefik-proxy"> | cust:traefik-proxy  |
+| <img src="/Assets/Icons/traefik-mesh.svg" width="48px" alt="cust:traefik-mesh"> | cust:traefik-mesh  |
 | <img src="/Assets/Icons/tree-christmas.svg" width="48px" alt="cust:tree-christmas"> | cust:tree-christmas  |
 | <img src="/Assets/Icons/unifi.svg" width="48px" alt="cust:unify"> | cust:unify  |
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
