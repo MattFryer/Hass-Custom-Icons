@@ -76,13 +76,17 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths">| cust:booths  |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd">| cust:byd  |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web  |
+| <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora  |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot  |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek  |
+| <img src="/Assets/Icons/dewalt.svg" width="48px" alt="cust:dewalt"> | cust:dewalt  |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus  |
 | <img src="/Assets/Icons/disney-plus-alt.svg" width="48px" alt="cust:disney-plus-alt"> | cust:disney-plus-alt  |
 | <img src="/Assets/Icons/draw-io.svg" width="48px" alt="cust:draw-io"> | cust:draw-io  |
 | <img src="/Assets/Icons/dreamworks.svg" width="48px" alt="cust:dreamworks"> | cust:dreamworks  |
 | <img src="/Assets/Icons/dreamworks-alt.svg" width="48px" alt="cust:dreamworks-alt"> | cust:dreamworks-alt  |
+| <img src="/Assets/Icons/england-rugby.svg" width="48px" alt="cust:england-rugby"> | cust:england-rugby  |
+| <img src="/Assets/Icons/england-rugby-alt.svg" width="48px" alt="cust:england-rugby-alt"> | cust:england-rugby-alt  |
 | <img src="/Assets/Icons/esphome.svg" width="48px" alt="cust:esphome"> | cust:esphome  |
 | <img src="/Assets/Icons/eufy.svg" width="48px" alt="cust:eufy"> | cust:eufy  |
 | <img src="/Assets/Icons/eufy-alt.svg" width="48px" alt="cust:eufy-alt"> | cust:eufy-alt  |
@@ -113,12 +117,14 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer  |
 | <img src="/Assets/Icons/iplayer-alt.svg" width="48px" alt="cust:iplayer-alt"> | cust:iplayer-alt  |
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools  |
+| <img src="/Assets/Icons/jackett.svg" width="48px" alt="cust:jackett"> | cust:jackett  |
 | <img src="/Assets/Icons/jellyseerr.svg" width="48px" alt="cust:jellyseerr"> | cust:jellyseerr  |
 | <img src="/Assets/Icons/jellystat.svg" width="48px" alt="cust:jellystat"> | cust:jellystat  |
 | <img src="/Assets/Icons/just-eat.svg" width="48px" alt="cust:just-eat"> | cust:just-eat  |
 | <img src="/Assets/Icons/just-eat-alt.svg" width="48px" alt="cust:just-eat-alt"> | cust:just-eat-alt  |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart  |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle  |
+| <img src="/Assets/Icons/kopia.svg" width="48px" alt="cust:kopia"> | cust:kopia  |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
 | <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px" alt="cust:layzspa-bubbles"> | cust:layzspa-bubbles |
 | <img src="/Assets/Icons/layzspa-heat.svg" width="48px" alt="cust:layzspa-heat"> | cust:layzspa-heat  |
@@ -137,6 +143,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/micro-bit-alt2.svg" width="48px" alt="cust:micro-bit-alt2"> | cust:micro-bit-alt2  |
 | <img src="/Assets/Icons/mqtt-explorer.svg" width="48px" alt="cust:mqtt-explorer"> | cust:mqtt-explorer  |
 | <img src="/Assets/Icons/music-assistant.svg" width="48px" alt="cust:music-assistant"> | cust:music-assistant  |
+| <img src="/Assets/Icons/netalertx.svg" width="48px" alt="cust:networkx"> | cust:networkx  |
 | <img src="/Assets/Icons/network-ups-tools.svg" width="48px" alt="cust:network-ups-tools"> | cust:network-ups-tools  |
 | <img src="/Assets/Icons/nhs.svg" width="48px" alt="cust:nhs"> | cust:nhs  |
 | <img src="/Assets/Icons/ninja-air-fryer.svg" width="48px" alt="cust:ninja-air-fryer"> | cust:ninja-air-fryer  |
@@ -152,8 +159,11 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/octopus-energy.svg" width="48px" alt="cust:octopus-energy"> | cust:octopus-energy  |
 | <img src="/Assets/Icons/ollama.svg" width="48px" alt="cust:ollama"> | cust:ollama  |
 | <img src="/Assets/Icons/omada.svg" width="48px" alt="cust:omada"> | cust:omada  |
+| <img src="/Assets/Icons/omni-tools.svg" width="48px" alt="cust:omni-tools"> | cust:omni-tools  |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai  |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt  |
+| <img src="/Assets/Icons/open-webui.svg" width="48px" alt="cust:open-webui"> | cust:open-webui  |
+| <img src="/Assets/Icons/pangolin.svg" width="48px" alt="cust:pangolin"> | cust:pangolin  |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless  |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut  |
 | <img src="/Assets/Icons/piper.svg" width="48px" alt="cust:piper"> | cust:piper  |
@@ -161,7 +171,9 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/piv.svg" width="48px" alt="cust:piv"> | cust:piv  |
 | <img src="/Assets/Icons/piv-alt.svg" width="48px" alt="cust:piv-alt"> | cust:piv-alt  |
 | <img src="/Assets/Icons/planka.svg" width="48px" alt="cust:planka "> | cust:planka  |
+| <img src="/Assets/Icons/portainer.svg" width="48px" alt="cust:portainer "> | cust:portainer  |
 | <img src="/Assets/Icons/power-bi.svg" width="48px" alt="cust:power-bi "> | cust:power-bi  |
+| <img src="/Assets/Icons/pulsarr.svg" width="48px" alt="cust:pulsarr "> | cust:pulsarr  |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr  |
 | <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo  |
 | <img src="/Assets/Icons/resideo-alt.svg" width="48px" alt="cust:resideo-alt"> | cust:resideo-alt  |
@@ -176,9 +188,14 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/synology-dsm.svg" width="48px" alt="cust:synology-dsm">  | cust:synology-dsm  |
 | <img src="/Assets/Icons/tado.svg" width="48px" alt="cust:tado "> | cust:tado  |
 | <img src="/Assets/Icons/tasmota.svg" width="48px" alt="cust:tasmota"> | cust:tasmota  |
+| <img src="/Assets/Icons/tautulli.svg" width="48px" alt="cust:tautulli"> | cust:tautulli  |
 | <img src="/Assets/Icons/tesco.svg" width="48px" alt="cust:tesco"> | cust:tesco  |
 | <img src="/Assets/Icons/toolstation.svg" width="48px" alt="cust:toolstation"> | cust:toolstation  |
 | <img src="/Assets/Icons/tp-link.svg" width="48px" alt="cust:tp-link"> | cust:tp-link  |
+| <img src="/Assets/Icons/traefik.svg" width="48px" alt="cust:traefik"> | cust:traefik  |
+| <img src="/Assets/Icons/traefik-alt.svg" width="48px" alt="cust:traefik-alt"> | cust:traefik-alt  |
+| <img src="/Assets/Icons/traefik-proxy.svg" width="48px" alt="cust:traefik-proxy"> | cust:traefik-proxy  |
+| <img src="/Assets/Icons/traefik-mesh.svg" width="48px" alt="cust:traefik-mesh"> | cust:traefik-mesh  |
 | <img src="/Assets/Icons/tree-christmas.svg" width="48px" alt="cust:tree-christmas"> | cust:tree-christmas  |
 | <img src="/Assets/Icons/unifi.svg" width="48px" alt="cust:unify"> | cust:unify  |
 | <img src="/Assets/Icons/unifi-alt.svg" width="48px" alt="cust:unify-alt"> | cust:unify-alt  |
@@ -191,4 +208,5 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/wallos-alt.svg" width="48px" alt="cust:wallos-alt"> | cust:wallos-alt  |
 | <img src="/Assets/Icons/watchtower.svg" width="48px" alt="cust:watchtower"> | cust:watchtower  |
 | <img src="/Assets/Icons/wemo.svg" width="48px" alt="cust:wemo"> | cust:wemo  |
+| <img src="/Assets/Icons/wireguard.svg" width="48px" alt="cust:wireguard"> | cust:wireguard  |
 | <img src="/Assets/Icons/zigbee2mqtt.svg" width="48px" alt="cust:zigbee2mqtt"> | cust:zigbee2mqtt  |
