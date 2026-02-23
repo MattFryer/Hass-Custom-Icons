@@ -1,0 +1,63 @@
+name: Sync Icons
+
+# Runs whenever a push touches the Assets/Icons folder,
+# or when the sync script itself is updated.
+# Can also be triggered manually from the Actions tab.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Assets/Icons/**"
+      - "update_icons.py"
+  workflow_dispatch:          # manual trigger
+
+permissions:
+  contents: write             # needed to commit the updated files
+
+jobs:
+  sync-icons:
+    name: Sync icon registry and README table
+    runs-on: ubuntu-latest
+
+    steps:
+      # -----------------------------------------------------------------------
+      # 1. Check out the repository (full depth so we can push back)
+      # -----------------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # -----------------------------------------------------------------------
+      # 2. Set up Python (stdlib only – no pip dependencies required)
+      # -----------------------------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # -----------------------------------------------------------------------
+      # 3. Run the sync script
+      # -----------------------------------------------------------------------
+      - name: Run update_icons.py
+        run: python update_icons.py --repo-root .
+
+      # -----------------------------------------------------------------------
+      # 4. Commit and push if anything changed
+      # -----------------------------------------------------------------------
+      - name: Commit changes (if any)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the two managed files
+          git add Hass-Custom-Icons.js README.md
+
+          # Only commit if there are staged changes
+          if git diff --cached --quiet; then
+            echo "Nothing to commit – files are already up-to-date."
+          else
+            git commit -m "chore: sync icon registry and README [skip ci]"
+            git push
+          fi
