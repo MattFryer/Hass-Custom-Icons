@@ -8,6 +8,21 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: adguard-home-sync
+        icon: cust:adguard-home-sync
+      - show_name: true
+        show_icon: true
+        type: button
+        name: agregarr
+        icon: cust:agregarr
+      - show_name: true
+        show_icon: true
+        type: button
+        name: agregarr-alt
+        icon: cust:agregarr-alt
+      - show_name: true
+        show_icon: true
+        type: button
         name: air-up
         icon: cust:air-up
       - show_name: true
@@ -55,6 +70,11 @@ views:
         type: button
         name: audiobookshelf
         icon: cust:audiobookshelf
+      - show_name: true
+        show_icon: true
+        type: button
+        name: auto-calibre-web
+        icon: cust:auto-calibre-web
       - show_name: true
         show_icon: true
         type: button
@@ -350,6 +370,11 @@ views:
         type: button
         name: kindle
         icon: cust:kindle
+      - show_name: true
+        show_icon: true
+        type: button
+        name: komodo
+        icon: cust:komodo
       - show_name: true
         show_icon: true
         type: button

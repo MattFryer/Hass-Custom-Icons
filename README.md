@@ -58,6 +58,9 @@ Below are all of the currently available icons in this component and their codes
 <!-- ICONS_TABLE_START -->
 | Icon | Code |
 | --- | --- |
+| <img src="/Assets/Icons/adguard-home-sync.svg" width="48px" alt="cust:adguard-home-sync"> | cust:adguard-home-sync |
+| <img src="/Assets/Icons/agregarr.svg" width="48px" alt="cust:agregarr"> | cust:agregarr |
+| <img src="/Assets/Icons/agregarr-alt.svg" width="48px" alt="cust:agregarr-alt"> | cust:agregarr-alt |
 | <img src="/Assets/Icons/air-up.svg" width="48px" alt="cust:air-up"> | cust:air-up |
 | <img src="/Assets/Icons/aldi.svg" width="48px" alt="cust:aldi"> | cust:aldi |
 | <img src="/Assets/Icons/alexa.svg" width="48px" alt="cust:alexa"> | cust:alexa |
@@ -68,6 +71,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/arlo.svg" width="48px" alt="cust:arlo"> | cust:arlo |
 | <img src="/Assets/Icons/arlo-alt.svg" width="48px" alt="cust:arlo-alt"> | cust:arlo-alt |
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf |
+| <img src="/Assets/Icons/auto-calibre-web.svg" width="48px" alt="cust:auto-calibre-web"> | cust:auto-calibre-web |
 | <img src="/Assets/Icons/b&q.svg" width="48px" alt="cust:b&q"> | cust:b&q |
 | <img src="/Assets/Icons/bazarr.svg" width="48px" alt="cust:bazarr"> | cust:bazarr |
 | <img src="/Assets/Icons/bbc-micro.svg" width="48px" alt="cust:bbc-micro"> | cust:bbc-micro |
@@ -127,6 +131,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/just-eat-alt.svg" width="48px" alt="cust:just-eat-alt"> | cust:just-eat-alt |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle |
+| <img src="/Assets/Icons/komodo.svg" width="48px" alt="cust:komodo"> | cust:komodo |
 | <img src="/Assets/Icons/kopia.svg" width="48px" alt="cust:kopia"> | cust:kopia |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
 | <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px" alt="cust:layzspa-bubbles"> | cust:layzspa-bubbles |
