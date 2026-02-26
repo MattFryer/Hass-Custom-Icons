@@ -121,6 +121,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/hp.svg" width="48px" alt="cust:hp"> | cust:hp |
 | <img src="/Assets/Icons/immich.svg" width="48px" alt="cust:immich"> | cust:immich |
 | <img src="/Assets/Icons/influxdb.svg" width="48px" alt="cust:influxdb"> | cust:influxdb |
+| <img src="/Assets/Icons/iplayarr.svg" width="48px" alt="cust:iplayarr"> | cust:iplayarr |
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer |
 | <img src="/Assets/Icons/iplayer-alt.svg" width="48px" alt="cust:iplayer-alt"> | cust:iplayer-alt |
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools |

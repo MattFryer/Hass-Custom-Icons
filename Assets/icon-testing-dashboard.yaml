@@ -323,6 +323,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: iplayarr
+        icon: cust:iplayarr
+      - show_name: true
+        show_icon: true
+        type: button
         name: iplayer
         icon: cust:iplayer
       - show_name: true
