@@ -58,6 +58,7 @@ Below are all of the currently available icons in this component and their codes
 <!-- ICONS_TABLE_START -->
 | Icon | Code |
 | --- | --- |
+| <img src="/Assets/Icons/achew.svg" width="48px" alt="cust:achew"> | cust:achew |
 | <img src="/Assets/Icons/adguard-home-sync.svg" width="48px" alt="cust:adguard-home-sync"> | cust:adguard-home-sync |
 | <img src="/Assets/Icons/agregarr.svg" width="48px" alt="cust:agregarr"> | cust:agregarr |
 | <img src="/Assets/Icons/agregarr-alt.svg" width="48px" alt="cust:agregarr-alt"> | cust:agregarr-alt |
