@@ -118,6 +118,16 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: bosch
+        icon: cust:bosch
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bosch-alt
+        icon: cust:bosch-alt
+      - show_name: true
+        show_icon: true
+        type: button
         name: byd
         icon: cust:byd
       - show_name: true

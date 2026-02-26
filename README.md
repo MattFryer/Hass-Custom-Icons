@@ -80,6 +80,8 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bitwarden.svg" width="48px" alt="cust:bitwarden"> | cust:bitwarden |
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack"> | cust:bookstack |
 | <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths"> | cust:booths |
+| <img src="/Assets/Icons/bosch.svg" width="48px" alt="cust:bosch"> | cust:bosch |
+| <img src="/Assets/Icons/bosch-alt.svg" width="48px" alt="cust:bosch-alt"> | cust:bosch-alt |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd"> | cust:byd |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web |
 | <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora |
