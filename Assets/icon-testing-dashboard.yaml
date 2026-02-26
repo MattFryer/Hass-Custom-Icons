@@ -28,6 +28,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: alarmpi
+        icon: cust:alarmpi
+      - show_name: true
+        show_icon: true
+        type: button
         name: aldi
         icon: cust:aldi
       - show_name: true
