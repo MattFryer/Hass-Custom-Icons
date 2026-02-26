@@ -138,6 +138,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: ddclient
+        icon: cust:ddclient
+      - show_name: true
+        show_icon: true
+        type: button
         name: deepseek
         icon: cust:deepseek
       - show_name: true
