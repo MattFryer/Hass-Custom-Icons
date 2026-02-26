@@ -19,7 +19,9 @@ Additional icons for use in the Home Assistant UI. I initially created this comp
 Whilst this component and the icons within are intended for my own use, feel free to use them in your Home Assistant instance also.
 
 ## Adding More Icons
-If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository and I'll consider adding. Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls).
+If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository and I'll consider adding. 
+
+Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls). When adding an icon, only the new SVG icon should be placed in the "/Assets/Icons/" folder. Do not modify the JavaScript or other files. These will be updated automaticaally when the pull request is merged.
 
 If you just want to show your appreciation, you can sponsor the project or send a one off donation using the links below:
 
