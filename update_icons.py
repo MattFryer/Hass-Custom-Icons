@@ -25,9 +25,10 @@ from pathlib import Path
 # Configuration
 # ---------------------------------------------------------------------------
 
-ICONS_DIR = Path("Assets/Icons")
-JS_FILE   = Path("Hass-Custom-Icons.js")
-README    = Path("README.md")
+ICONS_DIR  = Path("Assets/Icons")
+JS_FILE    = Path("Hass-Custom-Icons.js")
+README     = Path("README.md")
+DASHBOARD  = Path("Assets/icon-testing-dashboard.yaml")
 
 # The JS prefix used when referencing icons in Home Assistant
 ICON_PREFIX = "cust"
@@ -40,6 +41,10 @@ JS_BLOCK_END   = "// <<ICONS_END>>"
 # Sentinel HTML comments that mark the managed table block inside README.md
 README_TABLE_START = "<!-- ICONS_TABLE_START -->"
 README_TABLE_END   = "<!-- ICONS_TABLE_END -->"
+
+# Sentinel YAML comments that mark the managed cards block inside the dashboard
+YAML_CARDS_START = "# <<CARDS_START>> - managed by update_icons.py, do not edit manually"
+YAML_CARDS_END   = "# <<CARDS_END>>"
 
 
 # ---------------------------------------------------------------------------
@@ -279,7 +284,88 @@ def update_readme(
 
 
 # ---------------------------------------------------------------------------
-# Main
+# Dashboard YAML update
+# ---------------------------------------------------------------------------
+
+def build_dashboard_cards(icons: dict[str, dict], prefix: str) -> str:
+    """Generate the sorted list of button cards for the HA testing dashboard."""
+    sorted_names = sorted(icons.keys(), key=str.lower)
+    lines = []
+    for name in sorted_names:
+        code = f"{prefix}:{name}"
+        lines.append(f"      - show_name: true")
+        lines.append(f"        show_icon: true")
+        lines.append(f"        type: button")
+        lines.append(f"        name: {name}")
+        lines.append(f"        icon: {code}")
+    return "\n".join(lines)
+
+
+DASHBOARD_TEMPLATE = """\
+views:
+  - type: masonry
+    path: icon-testing
+    title: Icon Testing
+    icon: mdi:github
+    cards:
+{yaml_cards_start}
+{cards}
+{yaml_cards_end}
+"""
+
+
+def update_dashboard(
+    dashboard_path: Path,
+    icons: dict[str, dict],
+    prefix: str,
+    dry_run: bool = False,
+) -> bool:
+    """
+    Update (or create) the HA testing dashboard YAML.
+
+    If the file exists and contains sentinels, only the cards block is replaced.
+    If the file does not exist, a complete dashboard file is written from the template.
+    Returns True if the file was (would be) changed.
+    """
+    new_cards = build_dashboard_cards(icons, prefix)
+    new_block = f"{YAML_CARDS_START}\n{new_cards}\n{YAML_CARDS_END}"
+
+    if not dashboard_path.exists():
+        print(f"  Dashboard file not found – creating {dashboard_path}")
+        content = DASHBOARD_TEMPLATE.format(
+            yaml_cards_start=YAML_CARDS_START,
+            cards=new_cards,
+            yaml_cards_end=YAML_CARDS_END,
+        )
+        if not dry_run:
+            dashboard_path.parent.mkdir(parents=True, exist_ok=True)
+            dashboard_path.write_text(content, encoding="utf-8")
+        return True
+
+    original = dashboard_path.read_text(encoding="utf-8")
+
+    if YAML_CARDS_START in original and YAML_CARDS_END in original:
+        start_idx = original.index(YAML_CARDS_START)
+        end_idx   = original.index(YAML_CARDS_END) + len(YAML_CARDS_END)
+        updated = original[:start_idx] + new_block + original[end_idx:]
+    else:
+        # No sentinels – try to find the cards: key and insert after it
+        cards_key_match = re.search(r"^(\s*)cards:\s*$", original, re.MULTILINE)
+        if cards_key_match:
+            insert_at = cards_key_match.end()
+            updated = original[:insert_at] + "\n" + new_block + original[insert_at:]
+        else:
+            print("  Could not locate 'cards:' key – appending managed block.")
+            updated = original.rstrip() + f"\n\n{new_block}\n"
+
+    if updated == original:
+        print("  Dashboard already up-to-date.")
+        return False
+    if not dry_run:
+        dashboard_path.write_text(updated, encoding="utf-8")
+    return True
+
+
 # ---------------------------------------------------------------------------
 
 def scan_icons(icons_dir: Path) -> dict[str, dict]:
@@ -306,7 +392,7 @@ def scan_icons(icons_dir: Path) -> dict[str, dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Sync SVG icons into Hass-Custom-Icons.js and README.md"
+        description="Sync SVG icons into Hass-Custom-Icons.js, README.md and the testing dashboard"
     )
     parser.add_argument(
         "--repo-root",
@@ -325,15 +411,17 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    repo_root = Path(args.repo_root).resolve()
-    icons_dir = repo_root / ICONS_DIR
-    js_path   = repo_root / JS_FILE
-    readme    = repo_root / README
+    repo_root     = Path(args.repo_root).resolve()
+    icons_dir     = repo_root / ICONS_DIR
+    js_path       = repo_root / JS_FILE
+    readme        = repo_root / README
+    dashboard     = repo_root / DASHBOARD
 
     print(f"Repository root : {repo_root}")
     print(f"Icons directory : {icons_dir}")
     print(f"JS file         : {js_path}")
     print(f"README          : {readme}")
+    print(f"Dashboard       : {dashboard}")
     print(f"Icon prefix     : {args.prefix}")
     if args.dry_run:
         print("[DRY-RUN] No files will be written.\n")
@@ -356,6 +444,11 @@ def main() -> None:
     print(f"\nUpdating {readme} …")
     readme_changed = update_readme(readme, icons, args.prefix, icons_dir, dry_run=args.dry_run)
     print("  → Changed." if readme_changed else "  → No change.")
+
+    # 4. Update testing dashboard
+    print(f"\nUpdating {dashboard} …")
+    dash_changed = update_dashboard(dashboard, icons, args.prefix, dry_run=args.dry_run)
+    print("  → Changed." if dash_changed else "  → No change.")
 
     print("\nDone.")
 

@@ -51,8 +51,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage only the two managed files
-          git add Hass-Custom-Icons.js README.md
+          # Stage only the managed files
+          git add Hass-Custom-Icons.js README.md Assets/icon-testing-dashboard.yaml
 
           # Only commit if there are staged changes
           if git diff --cached --quiet; then

@@ -1,0 +1,793 @@
+views:
+  - type: masonry
+    path: icon-testing
+    title: Icon Testing
+    icon: mdi:github
+    cards:
+# <<CARDS_START>> - managed by update_icons.py, do not edit manually
+      - show_name: true
+        show_icon: true
+        type: button
+        name: air-up
+        icon: cust:air-up
+      - show_name: true
+        show_icon: true
+        type: button
+        name: aldi
+        icon: cust:aldi
+      - show_name: true
+        show_icon: true
+        type: button
+        name: alexa
+        icon: cust:alexa
+      - show_name: true
+        show_icon: true
+        type: button
+        name: alexa-plus
+        icon: cust:alexa-plus
+      - show_name: true
+        show_icon: true
+        type: button
+        name: apollo-automation
+        icon: cust:apollo-automation
+      - show_name: true
+        show_icon: true
+        type: button
+        name: apple-tv
+        icon: cust:apple-tv
+      - show_name: true
+        show_icon: true
+        type: button
+        name: apple-tv-plus
+        icon: cust:apple-tv-plus
+      - show_name: true
+        show_icon: true
+        type: button
+        name: arlo
+        icon: cust:arlo
+      - show_name: true
+        show_icon: true
+        type: button
+        name: arlo-alt
+        icon: cust:arlo-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: audiobookshelf
+        icon: cust:audiobookshelf
+      - show_name: true
+        show_icon: true
+        type: button
+        name: b&q
+        icon: cust:b&q
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bazarr
+        icon: cust:bazarr
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bbc-micro
+        icon: cust:bbc-micro
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bbc-sounds
+        icon: cust:bbc-sounds
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bbc-sounds-alt
+        icon: cust:bbc-sounds-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bitwarden
+        icon: cust:bitwarden
+      - show_name: true
+        show_icon: true
+        type: button
+        name: bookstack
+        icon: cust:bookstack
+      - show_name: true
+        show_icon: true
+        type: button
+        name: booths
+        icon: cust:booths
+      - show_name: true
+        show_icon: true
+        type: button
+        name: byd
+        icon: cust:byd
+      - show_name: true
+        show_icon: true
+        type: button
+        name: calibre-web
+        icon: cust:calibre-web
+      - show_name: true
+        show_icon: true
+        type: button
+        name: collabora
+        icon: cust:collabora
+      - show_name: true
+        show_icon: true
+        type: button
+        name: copilot
+        icon: cust:copilot
+      - show_name: true
+        show_icon: true
+        type: button
+        name: deepseek
+        icon: cust:deepseek
+      - show_name: true
+        show_icon: true
+        type: button
+        name: dewalt
+        icon: cust:dewalt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: disney-plus
+        icon: cust:disney-plus
+      - show_name: true
+        show_icon: true
+        type: button
+        name: disney-plus-alt
+        icon: cust:disney-plus-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: draw-io
+        icon: cust:draw-io
+      - show_name: true
+        show_icon: true
+        type: button
+        name: dreamworks
+        icon: cust:dreamworks
+      - show_name: true
+        show_icon: true
+        type: button
+        name: dreamworks-alt
+        icon: cust:dreamworks-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: england-rugby
+        icon: cust:england-rugby
+      - show_name: true
+        show_icon: true
+        type: button
+        name: england-rugby-alt
+        icon: cust:england-rugby-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: esphome
+        icon: cust:esphome
+      - show_name: true
+        show_icon: true
+        type: button
+        name: eufy
+        icon: cust:eufy
+      - show_name: true
+        show_icon: true
+        type: button
+        name: eufy-alt
+        icon: cust:eufy-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: everything-smart-tech
+        icon: cust:everything-smart-tech
+      - show_name: true
+        show_icon: true
+        type: button
+        name: evri
+        icon: cust:evri
+      - show_name: true
+        show_icon: true
+        type: button
+        name: extractor-hood
+        icon: cust:extractor-hood
+      - show_name: true
+        show_icon: true
+        type: button
+        name: farmfoods
+        icon: cust:farmfoods
+      - show_name: true
+        show_icon: true
+        type: button
+        name: fileflows
+        icon: cust:fileflows
+      - show_name: true
+        show_icon: true
+        type: button
+        name: firetv
+        icon: cust:firetv
+      - show_name: true
+        show_icon: true
+        type: button
+        name: fitbit
+        icon: cust:fitbit
+      - show_name: true
+        show_icon: true
+        type: button
+        name: freevee
+        icon: cust:freevee
+      - show_name: true
+        show_icon: true
+        type: button
+        name: freeview
+        icon: cust:freeview
+      - show_name: true
+        show_icon: true
+        type: button
+        name: freeview-alt
+        icon: cust:freeview-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: genesis
+        icon: cust:genesis
+      - show_name: true
+        show_icon: true
+        type: button
+        name: get-iplayer
+        icon: cust:get-iplayer
+      - show_name: true
+        show_icon: true
+        type: button
+        name: gramps-web
+        icon: cust:gramps-web
+      - show_name: true
+        show_icon: true
+        type: button
+        name: grubhub
+        icon: cust:grubhub
+      - show_name: true
+        show_icon: true
+        type: button
+        name: hass
+        icon: cust:hass
+      - show_name: true
+        show_icon: true
+        type: button
+        name: hbo-go
+        icon: cust:hbo-go
+      - show_name: true
+        show_icon: true
+        type: button
+        name: home-connect
+        icon: cust:home-connect
+      - show_name: true
+        show_icon: true
+        type: button
+        name: home-connect-alt
+        icon: cust:home-connect-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: homepage
+        icon: cust:homepage
+      - show_name: true
+        show_icon: true
+        type: button
+        name: honeywell
+        icon: cust:honeywell
+      - show_name: true
+        show_icon: true
+        type: button
+        name: honeywell-alt
+        icon: cust:honeywell-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: honeywell-home
+        icon: cust:honeywell-home
+      - show_name: true
+        show_icon: true
+        type: button
+        name: hp
+        icon: cust:hp
+      - show_name: true
+        show_icon: true
+        type: button
+        name: immich
+        icon: cust:immich
+      - show_name: true
+        show_icon: true
+        type: button
+        name: influxdb
+        icon: cust:influxdb
+      - show_name: true
+        show_icon: true
+        type: button
+        name: iplayer
+        icon: cust:iplayer
+      - show_name: true
+        show_icon: true
+        type: button
+        name: iplayer-alt
+        icon: cust:iplayer-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: it-tools
+        icon: cust:it-tools
+      - show_name: true
+        show_icon: true
+        type: button
+        name: jackett
+        icon: cust:jackett
+      - show_name: true
+        show_icon: true
+        type: button
+        name: jellyseerr
+        icon: cust:jellyseerr
+      - show_name: true
+        show_icon: true
+        type: button
+        name: jellystat
+        icon: cust:jellystat
+      - show_name: true
+        show_icon: true
+        type: button
+        name: just-eat
+        icon: cust:just-eat
+      - show_name: true
+        show_icon: true
+        type: button
+        name: just-eat-alt
+        icon: cust:just-eat-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: kasa-smart
+        icon: cust:kasa-smart
+      - show_name: true
+        show_icon: true
+        type: button
+        name: kindle
+        icon: cust:kindle
+      - show_name: true
+        show_icon: true
+        type: button
+        name: kopia
+        icon: cust:kopia
+      - show_name: true
+        show_icon: true
+        type: button
+        name: layzspa
+        icon: cust:layzspa
+      - show_name: true
+        show_icon: true
+        type: button
+        name: layzspa-bubbles
+        icon: cust:layzspa-bubbles
+      - show_name: true
+        show_icon: true
+        type: button
+        name: layzspa-heat
+        icon: cust:layzspa-heat
+      - show_name: true
+        show_icon: true
+        type: button
+        name: layzspa-pump
+        icon: cust:layzspa-pump
+      - show_name: true
+        show_icon: true
+        type: button
+        name: lg
+        icon: cust:lg
+      - show_name: true
+        show_icon: true
+        type: button
+        name: lg-alt
+        icon: cust:lg-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: lg-thinq
+        icon: cust:lg-thinq
+      - show_name: true
+        show_icon: true
+        type: button
+        name: linkding
+        icon: cust:linkding
+      - show_name: true
+        show_icon: true
+        type: button
+        name: linktap
+        icon: cust:linktap
+      - show_name: true
+        show_icon: true
+        type: button
+        name: logitech
+        icon: cust:logitech
+      - show_name: true
+        show_icon: true
+        type: button
+        name: m&s
+        icon: cust:m&s
+      - show_name: true
+        show_icon: true
+        type: button
+        name: mariadb
+        icon: cust:mariadb
+      - show_name: true
+        show_icon: true
+        type: button
+        name: mealie
+        icon: cust:mealie
+      - show_name: true
+        show_icon: true
+        type: button
+        name: micro-bit
+        icon: cust:micro-bit
+      - show_name: true
+        show_icon: true
+        type: button
+        name: micro-bit-alt
+        icon: cust:micro-bit-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: micro-bit-alt2
+        icon: cust:micro-bit-alt2
+      - show_name: true
+        show_icon: true
+        type: button
+        name: mqtt-explorer
+        icon: cust:mqtt-explorer
+      - show_name: true
+        show_icon: true
+        type: button
+        name: music-assistant
+        icon: cust:music-assistant
+      - show_name: true
+        show_icon: true
+        type: button
+        name: netalertx
+        icon: cust:netalertx
+      - show_name: true
+        show_icon: true
+        type: button
+        name: network-ups-tools
+        icon: cust:network-ups-tools
+      - show_name: true
+        show_icon: true
+        type: button
+        name: nhs
+        icon: cust:nhs
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ninja-air-fryer
+        icon: cust:ninja-air-fryer
+      - show_name: true
+        show_icon: true
+        type: button
+        name: nintendo-switch-2
+        icon: cust:nintendo-switch-2
+      - show_name: true
+        show_icon: true
+        type: button
+        name: nintendo-switch-2-alt
+        icon: cust:nintendo-switch-2-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: node-red
+        icon: cust:node-red
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ntfy
+        icon: cust:ntfy
+      - show_name: true
+        show_icon: true
+        type: button
+        name: nuaire
+        icon: cust:nuaire
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ocado
+        icon: cust:ocado
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ocado-alt
+        icon: cust:ocado-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: octoprint
+        icon: cust:octoprint
+      - show_name: true
+        show_icon: true
+        type: button
+        name: octoprint-alt
+        icon: cust:octoprint-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: octopus-energy
+        icon: cust:octopus-energy
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ollama
+        icon: cust:ollama
+      - show_name: true
+        show_icon: true
+        type: button
+        name: omada
+        icon: cust:omada
+      - show_name: true
+        show_icon: true
+        type: button
+        name: omni-tools
+        icon: cust:omni-tools
+      - show_name: true
+        show_icon: true
+        type: button
+        name: open-webui
+        icon: cust:open-webui
+      - show_name: true
+        show_icon: true
+        type: button
+        name: openai
+        icon: cust:openai
+      - show_name: true
+        show_icon: true
+        type: button
+        name: openai-alt
+        icon: cust:openai-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: opencloud
+        icon: cust:opencloud
+      - show_name: true
+        show_icon: true
+        type: button
+        name: pangolin
+        icon: cust:pangolin
+      - show_name: true
+        show_icon: true
+        type: button
+        name: paperless
+        icon: cust:paperless
+      - show_name: true
+        show_icon: true
+        type: button
+        name: peanut
+        icon: cust:peanut
+      - show_name: true
+        show_icon: true
+        type: button
+        name: piper
+        icon: cust:piper
+      - show_name: true
+        show_icon: true
+        type: button
+        name: piper-alt
+        icon: cust:piper-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: piv
+        icon: cust:piv
+      - show_name: true
+        show_icon: true
+        type: button
+        name: piv-alt
+        icon: cust:piv-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: planka
+        icon: cust:planka
+      - show_name: true
+        show_icon: true
+        type: button
+        name: portainer
+        icon: cust:portainer
+      - show_name: true
+        show_icon: true
+        type: button
+        name: power-bi
+        icon: cust:power-bi
+      - show_name: true
+        show_icon: true
+        type: button
+        name: pulsarr
+        icon: cust:pulsarr
+      - show_name: true
+        show_icon: true
+        type: button
+        name: readarr
+        icon: cust:readarr
+      - show_name: true
+        show_icon: true
+        type: button
+        name: resideo
+        icon: cust:resideo
+      - show_name: true
+        show_icon: true
+        type: button
+        name: resideo-alt
+        icon: cust:resideo-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: ring
+        icon: cust:ring
+      - show_name: true
+        show_icon: true
+        type: button
+        name: romm
+        icon: cust:romm
+      - show_name: true
+        show_icon: true
+        type: button
+        name: sainsburys
+        icon: cust:sainsburys
+      - show_name: true
+        show_icon: true
+        type: button
+        name: screwfix
+        icon: cust:screwfix
+      - show_name: true
+        show_icon: true
+        type: button
+        name: smlight
+        icon: cust:smlight
+      - show_name: true
+        show_icon: true
+        type: button
+        name: sonoff
+        icon: cust:sonoff
+      - show_name: true
+        show_icon: true
+        type: button
+        name: sonos
+        icon: cust:sonos
+      - show_name: true
+        show_icon: true
+        type: button
+        name: stirling-pdf
+        icon: cust:stirling-pdf
+      - show_name: true
+        show_icon: true
+        type: button
+        name: synology
+        icon: cust:synology
+      - show_name: true
+        show_icon: true
+        type: button
+        name: synology-dsm
+        icon: cust:synology-dsm
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tado
+        icon: cust:tado
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tasmota
+        icon: cust:tasmota
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tautulli
+        icon: cust:tautulli
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tesco
+        icon: cust:tesco
+      - show_name: true
+        show_icon: true
+        type: button
+        name: toolstation
+        icon: cust:toolstation
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tp-link
+        icon: cust:tp-link
+      - show_name: true
+        show_icon: true
+        type: button
+        name: traefik
+        icon: cust:traefik
+      - show_name: true
+        show_icon: true
+        type: button
+        name: traefik-alt
+        icon: cust:traefik-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: traefik-mesh
+        icon: cust:traefik-mesh
+      - show_name: true
+        show_icon: true
+        type: button
+        name: traefik-proxy
+        icon: cust:traefik-proxy
+      - show_name: true
+        show_icon: true
+        type: button
+        name: tree-christmas
+        icon: cust:tree-christmas
+      - show_name: true
+        show_icon: true
+        type: button
+        name: unifi
+        icon: cust:unifi
+      - show_name: true
+        show_icon: true
+        type: button
+        name: unifi-alt
+        icon: cust:unifi-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: vaultwarden
+        icon: cust:vaultwarden
+      - show_name: true
+        show_icon: true
+        type: button
+        name: vaultwarden-alt
+        icon: cust:vaultwarden-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: virgin-media
+        icon: cust:virgin-media
+      - show_name: true
+        show_icon: true
+        type: button
+        name: vscode
+        icon: cust:vscode
+      - show_name: true
+        show_icon: true
+        type: button
+        name: waitrose
+        icon: cust:waitrose
+      - show_name: true
+        show_icon: true
+        type: button
+        name: wallos
+        icon: cust:wallos
+      - show_name: true
+        show_icon: true
+        type: button
+        name: wallos-alt
+        icon: cust:wallos-alt
+      - show_name: true
+        show_icon: true
+        type: button
+        name: watchtower
+        icon: cust:watchtower
+      - show_name: true
+        show_icon: true
+        type: button
+        name: wemo
+        icon: cust:wemo
+      - show_name: true
+        show_icon: true
+        type: button
+        name: wireguard
+        icon: cust:wireguard
+      - show_name: true
+        show_icon: true
+        type: button
+        name: zigbee2mqtt
+        icon: cust:zigbee2mqtt
+# <<CARDS_END>>

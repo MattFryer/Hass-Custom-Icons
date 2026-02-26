@@ -113,6 +113,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt"> | cust:honeywell-alt |
 | <img src="/Assets/Icons/honeywell-home.svg" width="48px" alt="cust:honeywell-home"> | cust:honeywell-home |
 | <img src="/Assets/Icons/hp.svg" width="48px" alt="cust:hp"> | cust:hp |
+| <img src="/Assets/Icons/immich.svg" width="48px" alt="cust:immich"> | cust:immich |
 | <img src="/Assets/Icons/influxdb.svg" width="48px" alt="cust:influxdb"> | cust:influxdb |
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer |
 | <img src="/Assets/Icons/iplayer-alt.svg" width="48px" alt="cust:iplayer-alt"> | cust:iplayer-alt |
@@ -163,6 +164,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/open-webui.svg" width="48px" alt="cust:open-webui"> | cust:open-webui |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt |
+| <img src="/Assets/Icons/opencloud.svg" width="48px" alt="cust:opencloud"> | cust:opencloud |
 | <img src="/Assets/Icons/pangolin.svg" width="48px" alt="cust:pangolin"> | cust:pangolin |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut |
@@ -181,6 +183,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/romm.svg" width="48px" alt="cust:romm"> | cust:romm |
 | <img src="/Assets/Icons/sainsburys.svg" width="48px" alt="cust:sainsburys"> | cust:sainsburys |
 | <img src="/Assets/Icons/screwfix.svg" width="48px" alt="cust:screwfix"> | cust:screwfix |
+| <img src="/Assets/Icons/smlight.svg" width="48px" alt="cust:smlight"> | cust:smlight |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff |
 | <img src="/Assets/Icons/sonos.svg" width="48px" alt="cust:sonos"> | cust:sonos |
 | <img src="/Assets/Icons/stirling-pdf.svg" width="48px" alt="cust:stirling-pdf"> | cust:stirling-pdf |
