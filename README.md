@@ -19,7 +19,9 @@ Additional icons for use in the Home Assistant UI. I initially created this comp
 Whilst this component and the icons within are intended for my own use, feel free to use them in your Home Assistant instance also.
 
 ## Adding More Icons
-If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository and I'll consider adding. Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls).
+If you would like to add more icons, please [raise an issue](https://github.com/MattFryer/Hass-Custom-Icons/issues) in the Github repository and I'll consider adding. 
+
+Alternatively, add the icons yourself and [raise a pull request](https://github.com/MattFryer/Hass-Custom-Icons/pulls). When adding an icon, only the new SVG icon should be placed in the "/Assets/Icons/" folder. Do not modify the JavaScript or other files. These will be updated automaticaally when the pull request is merged.
 
 If you just want to show your appreciation, you can sponsor the project or send a one off donation using the links below:
 
@@ -56,7 +58,12 @@ Below are all of the currently available icons in this component and their codes
 <!-- ICONS_TABLE_START -->
 | Icon | Code |
 | --- | --- |
+| <img src="/Assets/Icons/achew.svg" width="48px" alt="cust:achew"> | cust:achew |
+| <img src="/Assets/Icons/adguard-home-sync.svg" width="48px" alt="cust:adguard-home-sync"> | cust:adguard-home-sync |
+| <img src="/Assets/Icons/agregarr.svg" width="48px" alt="cust:agregarr"> | cust:agregarr |
+| <img src="/Assets/Icons/agregarr-alt.svg" width="48px" alt="cust:agregarr-alt"> | cust:agregarr-alt |
 | <img src="/Assets/Icons/air-up.svg" width="48px" alt="cust:air-up"> | cust:air-up |
+| <img src="/Assets/Icons/alarmpi.svg" width="48px" alt="cust:alarmpi"> | cust:alarmpi |
 | <img src="/Assets/Icons/aldi.svg" width="48px" alt="cust:aldi"> | cust:aldi |
 | <img src="/Assets/Icons/alexa.svg" width="48px" alt="cust:alexa"> | cust:alexa |
 | <img src="/Assets/Icons/alexa-plus.svg" width="48px" alt="cust:alexa-plus"> | cust:alexa-plus |
@@ -66,6 +73,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/arlo.svg" width="48px" alt="cust:arlo"> | cust:arlo |
 | <img src="/Assets/Icons/arlo-alt.svg" width="48px" alt="cust:arlo-alt"> | cust:arlo-alt |
 | <img src="/Assets/Icons/audiobookshelf.svg" width="48px" alt="cust:audiobookshelf"> | cust:audiobookshelf |
+| <img src="/Assets/Icons/auto-calibre-web.svg" width="48px" alt="cust:auto-calibre-web"> | cust:auto-calibre-web |
 | <img src="/Assets/Icons/b&q.svg" width="48px" alt="cust:b&q"> | cust:b&q |
 | <img src="/Assets/Icons/bazarr.svg" width="48px" alt="cust:bazarr"> | cust:bazarr |
 | <img src="/Assets/Icons/bbc-micro.svg" width="48px" alt="cust:bbc-micro"> | cust:bbc-micro |
@@ -74,10 +82,13 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bitwarden.svg" width="48px" alt="cust:bitwarden"> | cust:bitwarden |
 | <img src="/Assets/Icons/bookstack.svg" width="48px" alt="cust:bookstack"> | cust:bookstack |
 | <img src="/Assets/Icons/booths.svg" width="48px" alt="cust:booths"> | cust:booths |
+| <img src="/Assets/Icons/bosch.svg" width="48px" alt="cust:bosch"> | cust:bosch |
+| <img src="/Assets/Icons/bosch-alt.svg" width="48px" alt="cust:bosch-alt"> | cust:bosch-alt |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd"> | cust:byd |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web |
 | <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot |
+| <img src="/Assets/Icons/ddclient.svg" width="48px" alt="cust:ddclient"> | cust:ddclient |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek |
 | <img src="/Assets/Icons/dewalt.svg" width="48px" alt="cust:dewalt"> | cust:dewalt |
 | <img src="/Assets/Icons/disney-plus.svg" width="48px" alt="cust:disney-plus"> | cust:disney-plus |
@@ -113,7 +124,9 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/honeywell-alt.svg" width="48px" alt="cust:honeywell-alt"> | cust:honeywell-alt |
 | <img src="/Assets/Icons/honeywell-home.svg" width="48px" alt="cust:honeywell-home"> | cust:honeywell-home |
 | <img src="/Assets/Icons/hp.svg" width="48px" alt="cust:hp"> | cust:hp |
+| <img src="/Assets/Icons/immich.svg" width="48px" alt="cust:immich"> | cust:immich |
 | <img src="/Assets/Icons/influxdb.svg" width="48px" alt="cust:influxdb"> | cust:influxdb |
+| <img src="/Assets/Icons/iplayarr.svg" width="48px" alt="cust:iplayarr"> | cust:iplayarr |
 | <img src="/Assets/Icons/iplayer.svg" width="48px" alt="cust:iplayer"> | cust:iplayer |
 | <img src="/Assets/Icons/iplayer-alt.svg" width="48px" alt="cust:iplayer-alt"> | cust:iplayer-alt |
 | <img src="/Assets/Icons/it-tools.svg" width="48px" alt="cust:it-tools"> | cust:it-tools |
@@ -124,6 +137,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/just-eat-alt.svg" width="48px" alt="cust:just-eat-alt"> | cust:just-eat-alt |
 | <img src="/Assets/Icons/kasa-smart.svg" width="48px" alt="cust:kasa-smart"> | cust:kasa-smart |
 | <img src="/Assets/Icons/kindle.svg" width="48px" alt="cust:kindle"> | cust:kindle |
+| <img src="/Assets/Icons/komodo.svg" width="48px" alt="cust:komodo"> | cust:komodo |
 | <img src="/Assets/Icons/kopia.svg" width="48px" alt="cust:kopia"> | cust:kopia |
 | <img src="/Assets/Icons/layzspa.svg" width="48px" alt="cust:layzspa"> | cust:layzspa |
 | <img src="/Assets/Icons/layzspa-bubbles.svg" width="48px" alt="cust:layzspa-bubbles"> | cust:layzspa-bubbles |
@@ -163,6 +177,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/open-webui.svg" width="48px" alt="cust:open-webui"> | cust:open-webui |
 | <img src="/Assets/Icons/openai.svg" width="48px" alt="cust:openai"> | cust:openai |
 | <img src="/Assets/Icons/openai-alt.svg" width="48px" alt="cust:openai-alt"> | cust:openai-alt |
+| <img src="/Assets/Icons/opencloud.svg" width="48px" alt="cust:opencloud"> | cust:opencloud |
 | <img src="/Assets/Icons/pangolin.svg" width="48px" alt="cust:pangolin"> | cust:pangolin |
 | <img src="/Assets/Icons/paperless.svg" width="48px" alt="cust:paperless"> | cust:paperless |
 | <img src="/Assets/Icons/peanut.svg" width="48px" alt="cust:peanut"> | cust:peanut |
@@ -181,6 +196,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/romm.svg" width="48px" alt="cust:romm"> | cust:romm |
 | <img src="/Assets/Icons/sainsburys.svg" width="48px" alt="cust:sainsburys"> | cust:sainsburys |
 | <img src="/Assets/Icons/screwfix.svg" width="48px" alt="cust:screwfix"> | cust:screwfix |
+| <img src="/Assets/Icons/smlight.svg" width="48px" alt="cust:smlight"> | cust:smlight |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff |
 | <img src="/Assets/Icons/sonos.svg" width="48px" alt="cust:sonos"> | cust:sonos |
 | <img src="/Assets/Icons/stirling-pdf.svg" width="48px" alt="cust:stirling-pdf"> | cust:stirling-pdf |
