@@ -38,13 +38,21 @@ jobs:
           python-version: "3.11"
 
       # -----------------------------------------------------------------------
-      # 3. Run the sync script
+      # 3. Validate all icon viewBoxes before touching any output files.
+      #    The script exits with code 1 if any SVG does not use "0 0 24 24",
+      #    which causes this step – and the whole job – to fail immediately.
+      # -----------------------------------------------------------------------
+      - name: Validate icon viewBoxes
+        run: python update_icons.py --repo-root . --dry-run
+
+      # -----------------------------------------------------------------------
+      # 4. Run the sync script (writes JS, README and dashboard)
       # -----------------------------------------------------------------------
       - name: Run update_icons.py
         run: python update_icons.py --repo-root .
 
       # -----------------------------------------------------------------------
-      # 4. Commit and push if anything changed
+      # 5. Commit and push if anything changed
       # -----------------------------------------------------------------------
       - name: Commit changes (if any)
         run: |

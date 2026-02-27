@@ -46,6 +46,10 @@ README_TABLE_END   = "<!-- ICONS_TABLE_END -->"
 YAML_CARDS_START = "# <<CARDS_START>> - managed by update_icons.py, do not edit manually"
 YAML_CARDS_END   = "# <<CARDS_END>>"
 
+# Required viewBox for all icons
+REQUIRED_VIEWBOX = [0.0, 0.0, 24.0, 24.0]
+REQUIRED_VIEWBOX_STR = "0 0 24 24"
+
 
 # ---------------------------------------------------------------------------
 # SVG parsing helpers
@@ -77,13 +81,13 @@ def extract_svg_info(svg_path: Path) -> dict | None:
         return None
 
     # ---- viewBox ----
-    vb_raw = root.get("viewBox", "0 0 24 24")
+    vb_raw = root.get("viewBox", "").strip()
     try:
-        vb = [float(v) for v in vb_raw.split()]
+        vb = [float(v) for v in vb_raw.replace(",", " ").split()]
         if len(vb) != 4:
             raise ValueError
     except ValueError:
-        vb = [0, 0, 24, 24]
+        vb = None
 
     # ---- collect all path 'd' attributes ----
     paths = []
@@ -97,7 +101,37 @@ def extract_svg_info(svg_path: Path) -> dict | None:
         print(f"  [WARN] No <path> elements found in {svg_path}", file=sys.stderr)
         return None
 
-    return {"viewBox": vb, "paths": paths}
+    return {"viewBox": vb, "viewBox_raw": vb_raw, "paths": paths}
+
+
+# ---------------------------------------------------------------------------
+# ViewBox validation
+# ---------------------------------------------------------------------------
+
+def validate_viewbox(name: str, info: dict) -> str | None:
+    """
+    Check that the icon's viewBox is exactly REQUIRED_VIEWBOX.
+
+    Returns an error message string if invalid, or None if valid.
+    """
+    vb = info.get("viewBox")
+    vb_raw = info.get("viewBox_raw", "<missing>")
+
+    if vb is None:
+        return (
+            f"  ✗  {name}: viewBox is missing or unparseable "
+            f"(got: \"{vb_raw}\", expected: \"{REQUIRED_VIEWBOX_STR}\")"
+        )
+
+    if vb != REQUIRED_VIEWBOX:
+        # Format the actual value cleanly for the error message
+        actual = " ".join(str(int(v)) if v == int(v) else str(v) for v in vb)
+        return (
+            f"  ✗  {name}: invalid viewBox "
+            f"(got: \"{actual}\", expected: \"{REQUIRED_VIEWBOX_STR}\")"
+        )
+
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -369,7 +403,11 @@ def update_dashboard(
 # ---------------------------------------------------------------------------
 
 def scan_icons(icons_dir: Path) -> dict[str, dict]:
-    """Return a dict of {icon_name: svg_info} for all valid SVGs in icons_dir."""
+    """
+    Return a dict of {icon_name: svg_info} for all valid SVGs in icons_dir.
+
+    Raises SystemExit if any icon fails viewBox validation.
+    """
     icons: dict[str, dict] = {}
     if not icons_dir.is_dir():
         print(f"[ERROR] Icons directory not found: {icons_dir}", file=sys.stderr)
@@ -378,14 +416,35 @@ def scan_icons(icons_dir: Path) -> dict[str, dict]:
     svg_files = sorted(icons_dir.glob("*.svg"), key=lambda p: p.stem.lower())
     print(f"Found {len(svg_files)} SVG file(s) in {icons_dir}")
 
+    viewbox_errors: list[str] = []
+
     for svg_path in svg_files:
         name = filename_to_icon_name(svg_path)
         info = extract_svg_info(svg_path)
-        if info is not None:
+        if info is None:
+            print(f"  ✗  {name}  (skipped – could not parse)")
+            continue
+
+        # Validate viewBox before accepting the icon
+        error = validate_viewbox(name, info)
+        if error is not None:
+            viewbox_errors.append(error)
+            print(error, file=sys.stderr)
+        else:
             icons[name] = info
             print(f"  ✓  {name}")
-        else:
-            print(f"  ✗  {name}  (skipped)")
+
+    # Hard stop if any icons had an invalid viewBox
+    if viewbox_errors:
+        print(
+            f"\n[ERROR] {len(viewbox_errors)} icon(s) have an invalid viewBox. "
+            f"All icons must use viewBox=\"{REQUIRED_VIEWBOX_STR}\".\n"
+            "Offending icons:",
+            file=sys.stderr,
+        )
+        for err in viewbox_errors:
+            print(err, file=sys.stderr)
+        sys.exit(1)
 
     return icons
 
@@ -427,7 +486,7 @@ def main() -> None:
         print("[DRY-RUN] No files will be written.\n")
     print()
 
-    # 1. Scan icons
+    # 1. Scan and validate icons
     icons = scan_icons(icons_dir)
     if not icons:
         print("\n[ERROR] No valid icons found. Aborting.", file=sys.stderr)
