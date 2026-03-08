@@ -698,6 +698,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: seerr
+        icon: cust:seerr
+      - show_name: true
+        show_icon: true
+        type: button
         name: smlight
         icon: cust:smlight
       - show_name: true

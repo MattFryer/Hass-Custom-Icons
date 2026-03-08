@@ -196,6 +196,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/romm.svg" width="48px" alt="cust:romm"> | cust:romm |
 | <img src="/Assets/Icons/sainsburys.svg" width="48px" alt="cust:sainsburys"> | cust:sainsburys |
 | <img src="/Assets/Icons/screwfix.svg" width="48px" alt="cust:screwfix"> | cust:screwfix |
+| <img src="/Assets/Icons/seerr.svg" width="48px" alt="cust:seerr"> | cust:seerr |
 | <img src="/Assets/Icons/smlight.svg" width="48px" alt="cust:smlight"> | cust:smlight |
 | <img src="/Assets/Icons/sonoff.svg" width="48px" alt="cust:sonoff"> | cust:sonoff |
 | <img src="/Assets/Icons/sonos.svg" width="48px" alt="cust:sonos"> | cust:sonos |
