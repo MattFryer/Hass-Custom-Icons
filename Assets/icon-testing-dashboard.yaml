@@ -148,6 +148,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: claude-ai
+        icon: cust:claude-ai
+      - show_name: true
+        show_icon: true
+        type: button
         name: collabora
         icon: cust:collabora
       - show_name: true

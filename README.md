@@ -86,6 +86,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/bosch-alt.svg" width="48px" alt="cust:bosch-alt"> | cust:bosch-alt |
 | <img src="/Assets/Icons/byd.svg" width="48px" alt="cust:byd"> | cust:byd |
 | <img src="/Assets/Icons/calibre-web.svg" width="48px" alt="cust:calibre-web"> | cust:calibre-web |
+| <img src="/Assets/Icons/claude-ai.svg" width="48px" alt="cust:claude-ai"> | cust:claude-ai |
 | <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot |
 | <img src="/Assets/Icons/ddclient.svg" width="48px" alt="cust:ddclient"> | cust:ddclient |
