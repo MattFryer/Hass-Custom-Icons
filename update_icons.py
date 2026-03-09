@@ -50,6 +50,14 @@ YAML_CARDS_END   = "# <<CARDS_END>>"
 REQUIRED_VIEWBOX = [0.0, 0.0, 24.0, 24.0]
 REQUIRED_VIEWBOX_STR = "0 0 24 24"
 
+# Tolerance applied when checking whether path geometry lies within the viewBox.
+# SVG authoring tools round coordinates to a small number of decimal places, so
+# analytic curve extrema can legitimately land a fraction of a unit outside the
+# nominal boundary (e.g. a control point at x=-0.009 produces a cubic extremum
+# at x=-0.004).  0.1 units on a 24-unit canvas is ~0.4% — well below one pixel
+# at any normal display density and safe to treat as inside.
+BOUNDS_TOLERANCE = 0.1
+
 
 # ---------------------------------------------------------------------------
 # SVG parsing helpers
@@ -62,6 +70,394 @@ SVG_NS = "http://www.w3.org/2000/svg"
 
 def _tag(local: str) -> str:
     return f"{{{SVG_NS}}}{local}"
+
+
+# ---------------------------------------------------------------------------
+# SVG path curve geometry  (used by validate_path_bounds)
+# ---------------------------------------------------------------------------
+
+import math
+
+_PATH_CMD_RE = re.compile(r"([MmLlHhVvCcSsQqTtAaZz])")
+_PATH_NUM_RE = re.compile(r"[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?")
+
+# (args_per_repetition, [(x_index, y_index), ...])
+# H and V use None for xy_pairs — they are handled individually.
+_CMD_STRIDE: dict[str, tuple[int, list | None]] = {
+    "M": (2, [(0, 1)]),  "m": (2, [(0, 1)]),
+    "L": (2, [(0, 1)]),  "l": (2, [(0, 1)]),
+    "H": (1, None),      "h": (1, None),
+    "V": (1, None),      "v": (1, None),
+    "C": (6, [(0, 1), (2, 3), (4, 5)]),  "c": (6, [(0, 1), (2, 3), (4, 5)]),
+    "S": (4, [(0, 1), (2, 3)]),          "s": (4, [(0, 1), (2, 3)]),
+    "Q": (4, [(0, 1), (2, 3)]),          "q": (4, [(0, 1), (2, 3)]),
+    "T": (2, [(0, 1)]),  "t": (2, [(0, 1)]),
+    "A": (7, [(5, 6)]),  "a": (7, [(5, 6)]),
+    "Z": (0, []),        "z": (0, []),
+}
+
+
+def _tokenise_path(d: str) -> list[tuple[str, list[float]]]:
+    """
+    Split a path 'd' string into [(command, [numeric_args]), ...] tuples.
+
+    Arc commands ('A'/'a') require special handling: the large-arc-flag and
+    sweep-flag arguments are single bits (0 or 1) that the SVG spec allows to
+    be written without any separator, e.g. "a3 3 0 01-.5 1" where "01" means
+    large-arc-flag=0, sweep-flag=1.  A plain number regex would merge "01" into
+    the single value 1, shifting every subsequent argument by one position and
+    producing completely wrong coordinates.  We therefore parse arc argument
+    groups character-by-character so the flags are always read individually.
+    """
+    parts = _PATH_CMD_RE.split(d.strip())
+    result = []
+    i = 1
+    while i < len(parts):
+        cmd = parts[i]
+        arg_str = parts[i + 1] if i + 1 < len(parts) else ""
+        if cmd.upper() == "A":
+            nums = _parse_arc_args(arg_str)
+        else:
+            nums = [float(n) for n in _PATH_NUM_RE.findall(arg_str)]
+        result.append((cmd, nums))
+        i += 2
+    return result
+
+
+def _parse_arc_args(s: str) -> list[float]:
+    """
+    Parse the argument string for an arc command into a flat list of floats,
+    treating the large-arc-flag (position 3) and sweep-flag (position 4) within
+    each 7-argument group as mandatory single-character tokens ('0' or '1').
+
+    This correctly handles compact forms like "3.05 3.05 0 01-.246 1.231" where
+    the two flags are written adjacently with no separator.
+    """
+    result: list[float] = []
+    pos = 0
+    n = len(s)
+
+    def skip_sep() -> None:
+        nonlocal pos
+        while pos < n and (s[pos] in ' ,\t\n\r'):
+            pos += 1
+
+    def read_number() -> float | None:
+        nonlocal pos
+        skip_sep()
+        if pos >= n:
+            return None
+        m = _PATH_NUM_RE.match(s, pos)
+        if not m:
+            return None
+        pos = m.end()
+        return float(m.group())
+
+    def read_flag() -> float | None:
+        nonlocal pos
+        skip_sep()
+        if pos < n and s[pos] in ('0', '1'):
+            flag = float(s[pos])
+            pos += 1
+            return flag
+        return None
+
+    # Each arc repetition: rx ry x-rotation large-arc-flag sweep-flag x y
+    # Positions 0,1,2 and 5,6 are numbers; positions 3,4 are single-bit flags.
+    while pos < n:
+        group: list[float] = []
+        failed = False
+        for idx in range(7):
+            if idx in (3, 4):
+                v = read_flag()
+            else:
+                v = read_number()
+            if v is None:
+                failed = True
+                break
+            group.append(v)
+        if failed or len(group) < 7:
+            break
+        result.extend(group)
+
+    return result
+
+
+# ── per-segment extrema helpers ──────────────────────────────────────────────
+
+def _cubic_extrema_ts(p0: float, p1: float, p2: float, p3: float) -> list[float]:
+    """t values in (0, 1) where the cubic Bézier component has an extremum."""
+    # B'(t) = 3[at² + bt + c] where:
+    a = -3*p0 + 9*p1 - 9*p2 + 3*p3
+    b =  6*p0 - 12*p1 + 6*p2
+    c = -3*p0 + 3*p1
+    ts = []
+    if abs(a) < 1e-12:
+        if abs(b) > 1e-12:
+            t = -c / b
+            if 0.0 < t < 1.0:
+                ts.append(t)
+    else:
+        disc = b*b - 4*a*c
+        if disc >= 0.0:
+            sq = math.sqrt(disc)
+            for t in [(-b + sq) / (2*a), (-b - sq) / (2*a)]:
+                if 0.0 < t < 1.0:
+                    ts.append(t)
+    return ts
+
+
+def _eval_cubic(t: float, p0: float, p1: float, p2: float, p3: float) -> float:
+    u = 1.0 - t
+    return u**3*p0 + 3*u**2*t*p1 + 3*u*t**2*p2 + t**3*p3
+
+
+def _quadratic_extrema_ts(p0: float, p1: float, p2: float) -> list[float]:
+    """t value in (0, 1) where the quadratic Bézier component has an extremum."""
+    denom = p0 - 2*p1 + p2
+    if abs(denom) < 1e-12:
+        return []
+    t = (p0 - p1) / denom
+    return [t] if 0.0 < t < 1.0 else []
+
+
+def _eval_quadratic(t: float, p0: float, p1: float, p2: float) -> float:
+    u = 1.0 - t
+    return u**2*p0 + 2*u*t*p1 + t**2*p2
+
+
+def _arc_extreme_points(
+    x1: float, y1: float,
+    rx: float, ry: float, phi_deg: float,
+    fa: int, fs: int,
+    x2: float, y2: float,
+) -> list[tuple[float, float]]:
+    """
+    Return the points on the arc where x or y is locally extremal.
+    Uses the SVG arc-to-center conversion (F.6.5 of the SVG spec).
+    Does NOT include the arc endpoints — callers add those separately.
+    """
+    if rx == 0.0 or ry == 0.0 or (x1 == x2 and y1 == y2):
+        return []
+
+    rx, ry = abs(rx), abs(ry)
+    phi = math.radians(phi_deg)
+    cp, sp = math.cos(phi), math.sin(phi)
+
+    # Endpoint → center parameterisation (SVG spec §B.2.4)
+    dx2, dy2 = (x1 - x2) / 2.0, (y1 - y2) / 2.0
+    x1p =  cp*dx2 + sp*dy2
+    y1p = -sp*dx2 + cp*dy2
+
+    # Rescale radii if necessary
+    lam = (x1p / rx)**2 + (y1p / ry)**2
+    if lam > 1.0:
+        s = math.sqrt(lam)
+        rx *= s; ry *= s
+
+    num = max(0.0, rx**2*ry**2 - rx**2*y1p**2 - ry**2*x1p**2)
+    denom = rx**2*y1p**2 + ry**2*x1p**2
+    sq = math.sqrt(num / denom) if denom > 1e-12 else 0.0
+    if fa == fs:
+        sq = -sq
+
+    cxp =  sq * rx * y1p / ry
+    cyp = -sq * ry * x1p / rx
+    cx = cp*cxp - sp*cyp + (x1 + x2) / 2.0
+    cy = sp*cxp + cp*cyp + (y1 + y2) / 2.0
+
+    def _angle(ux: float, uy: float, vx: float, vy: float) -> float:
+        n = math.sqrt(ux**2 + uy**2) * math.sqrt(vx**2 + vy**2)
+        if n < 1e-12:
+            return 0.0
+        a = math.acos(max(-1.0, min(1.0, (ux*vx + uy*vy) / n)))
+        return -a if ux*vy - uy*vx < 0 else a
+
+    theta1 = _angle(1.0, 0.0, (x1p - cxp) / rx, (y1p - cyp) / ry)
+    dtheta = _angle(
+        (x1p - cxp) / rx, (y1p - cyp) / ry,
+        (-x1p - cxp) / rx, (-y1p - cyp) / ry,
+    )
+    if not fs and dtheta > 0.0:
+        dtheta -= 2*math.pi
+    if fs and dtheta < 0.0:
+        dtheta += 2*math.pi
+
+    # Angles where x or y on the full ellipse are extremal:
+    #   dx/dθ = 0 → θ = atan2(-ry·sin φ,  rx·cos φ) + k·π
+    #   dy/dθ = 0 → θ = atan2( ry·cos φ,  rx·sin φ) + k·π
+    candidate_bases = [
+        math.atan2(-ry * sp, rx * cp),
+        math.atan2( ry * cp, rx * sp),
+    ]
+    pts: list[tuple[float, float]] = []
+    for base in candidate_bases:
+        for k in range(-2, 3):
+            theta = base + k * math.pi
+            # Check whether theta lies within the arc's sweep
+            if dtheta >= 0.0:
+                t_norm = (theta - theta1) % (2*math.pi)
+                in_arc = 0.0 < t_norm < dtheta
+            else:
+                t_norm = (theta - theta1) % (-2*math.pi)
+                in_arc = dtheta < t_norm < 0.0
+            if in_arc:
+                x = cx + rx*math.cos(theta)*cp - ry*math.sin(theta)*sp
+                y = cy + rx*math.cos(theta)*sp + ry*math.sin(theta)*cp
+                pts.append((x, y))
+    return pts
+
+
+# ── main geometry walker ─────────────────────────────────────────────────────
+
+def path_extreme_points(d: str) -> list[tuple[float, float]]:
+    """
+    Return every point that could be extremal in the rendered geometry of
+    path *d*: segment endpoints, and the analytic extrema of every curve
+    segment (cubic/quadratic Bézier, elliptical arc).
+
+    Relative commands are resolved against a running cursor so all returned
+    coordinates are absolute.  The caller checks these points against the
+    viewBox; if they all lie inside, the entire rendered path is guaranteed
+    to lie inside (the extreme points of each segment bound it).
+    """
+    pts: list[tuple[float, float]] = []
+    cx, cy = 0.0, 0.0   # current pen
+    sx, sy = 0.0, 0.0   # subpath start (for Z)
+    prev_ctrl_x: float | None = None   # for S/T reflection
+    prev_ctrl_y: float | None = None
+    prev_cmd: str = ""
+
+    def _abs(dx: float, dy: float, rel: bool) -> tuple[float, float]:
+        return (cx + dx if rel else dx, cy + dy if rel else dy)
+
+    for cmd, nums in _tokenise_path(d):
+        upper = cmd.upper()
+        rel = cmd.islower()
+        stride, xy_pairs = _CMD_STRIDE[cmd]
+
+        if upper == "Z":
+            # Straight line back to subpath start — endpoints already recorded
+            pts.append((sx, sy))
+            cx, cy = sx, sy
+            prev_ctrl_x = prev_ctrl_y = None
+            prev_cmd = upper
+            continue
+
+        i = 0
+        while i + stride <= len(nums):
+            chunk = nums[i: i + stride]
+
+            if upper == "M":
+                ax, ay = _abs(chunk[0], chunk[1], rel)
+                pts.append((ax, ay))
+                cx, cy = ax, ay
+                if i == 0:          # first M sets the subpath origin
+                    sx, sy = ax, ay
+                # Subsequent coords after M are implicit L
+                if i > 0:
+                    pts.append((ax, ay))   # endpoint already added above
+
+            elif upper == "L":
+                ax, ay = _abs(chunk[0], chunk[1], rel)
+                pts.append((ax, ay))
+                cx, cy = ax, ay
+
+            elif upper == "H":
+                ax = chunk[0] + (cx if rel else 0.0)
+                pts.append((ax, cy))
+                cx = ax
+
+            elif upper == "V":
+                ay = chunk[0] + (cy if rel else 0.0)
+                pts.append((cx, ay))
+                cy = ay
+
+            elif upper == "C":
+                x1, y1 = _abs(chunk[0], chunk[1], rel)
+                x2, y2 = _abs(chunk[2], chunk[3], rel)
+                ex, ey = _abs(chunk[4], chunk[5], rel)
+                # Endpoints
+                pts.append((cx, cy))
+                pts.append((ex, ey))
+                # Analytic extrema of each component
+                for t in _cubic_extrema_ts(cx, x1, x2, ex):
+                    pts.append((_eval_cubic(t, cx, x1, x2, ex),
+                                 _eval_cubic(t, cy, y1, y2, ey)))
+                for t in _cubic_extrema_ts(cy, y1, y2, ey):
+                    pts.append((_eval_cubic(t, cx, x1, x2, ex),
+                                 _eval_cubic(t, cy, y1, y2, ey)))
+                prev_ctrl_x, prev_ctrl_y = x2, y2
+                cx, cy = ex, ey
+
+            elif upper == "S":
+                # Reflect previous cubic control point
+                if prev_cmd in ("C", "S") and prev_ctrl_x is not None:
+                    x1 = 2*cx - prev_ctrl_x
+                    y1 = 2*cy - prev_ctrl_y
+                else:
+                    x1, y1 = cx, cy
+                x2, y2 = _abs(chunk[0], chunk[1], rel)
+                ex, ey = _abs(chunk[2], chunk[3], rel)
+                pts.append((cx, cy)); pts.append((ex, ey))
+                for t in _cubic_extrema_ts(cx, x1, x2, ex):
+                    pts.append((_eval_cubic(t, cx, x1, x2, ex),
+                                 _eval_cubic(t, cy, y1, y2, ey)))
+                for t in _cubic_extrema_ts(cy, y1, y2, ey):
+                    pts.append((_eval_cubic(t, cx, x1, x2, ex),
+                                 _eval_cubic(t, cy, y1, y2, ey)))
+                prev_ctrl_x, prev_ctrl_y = x2, y2
+                cx, cy = ex, ey
+
+            elif upper == "Q":
+                x1, y1 = _abs(chunk[0], chunk[1], rel)
+                ex, ey = _abs(chunk[2], chunk[3], rel)
+                pts.append((cx, cy)); pts.append((ex, ey))
+                for t in _quadratic_extrema_ts(cx, x1, ex):
+                    pts.append((_eval_quadratic(t, cx, x1, ex),
+                                 _eval_quadratic(t, cy, y1, ey)))
+                for t in _quadratic_extrema_ts(cy, y1, ey):
+                    pts.append((_eval_quadratic(t, cx, x1, ex),
+                                 _eval_quadratic(t, cy, y1, ey)))
+                prev_ctrl_x, prev_ctrl_y = x1, y1
+                cx, cy = ex, ey
+
+            elif upper == "T":
+                # Reflect previous quadratic control point
+                if prev_cmd in ("Q", "T") and prev_ctrl_x is not None:
+                    x1 = 2*cx - prev_ctrl_x
+                    y1 = 2*cy - prev_ctrl_y
+                else:
+                    x1, y1 = cx, cy
+                ex, ey = _abs(chunk[0], chunk[1], rel)
+                pts.append((cx, cy)); pts.append((ex, ey))
+                for t in _quadratic_extrema_ts(cx, x1, ex):
+                    pts.append((_eval_quadratic(t, cx, x1, ex),
+                                 _eval_quadratic(t, cy, y1, ey)))
+                for t in _quadratic_extrema_ts(cy, y1, ey):
+                    pts.append((_eval_quadratic(t, cx, x1, ex),
+                                 _eval_quadratic(t, cy, y1, ey)))
+                prev_ctrl_x, prev_ctrl_y = x1, y1
+                cx, cy = ex, ey
+
+            elif upper == "A":
+                rx_a, ry_a, phi, fa, fs = chunk[0], chunk[1], chunk[2], int(chunk[3]), int(chunk[4])
+                ex, ey = _abs(chunk[5], chunk[6], rel)
+                pts.append((cx, cy)); pts.append((ex, ey))
+                pts.extend(_arc_extreme_points(cx, cy, rx_a, ry_a, phi, fa, fs, ex, ey))
+                prev_ctrl_x = prev_ctrl_y = None
+                cx, cy = ex, ey
+
+            if upper not in ("C", "S"):
+                prev_ctrl_x = prev_ctrl_y = None
+            if upper not in ("Q", "T"):
+                if upper not in ("C", "S"):
+                    prev_ctrl_x = prev_ctrl_y = None
+
+            prev_cmd = upper
+            i += stride
+
+    return pts
 
 
 def extract_svg_info(svg_path: Path) -> dict | None:
@@ -131,6 +527,70 @@ def validate_viewbox(name: str, info: dict) -> str | None:
             f"(got: \"{actual}\", expected: \"{REQUIRED_VIEWBOX_STR}\")"
         )
 
+    return None
+
+
+def validate_single_path(name: str, info: dict) -> str | None:
+    """
+    Check that the icon contains exactly one <path> element.
+
+    Returns an error message string if the check fails, or None if valid.
+    """
+    count = len(info.get("paths", []))
+    if count != 1:
+        return f"  ✗  {name}: expected exactly 1 <path> element, found {count}"
+    return None
+
+
+def validate_path_bounds(name: str, info: dict) -> str | None:
+    """
+    Check that the rendered geometry of the path lies entirely within the
+    viewBox (0 0 24 24).
+
+    Rather than checking raw coordinate values (which wrongly flags control
+    points that sit outside the canvas while their curve stays inside), this
+    function evaluates the analytic extrema of every segment:
+
+      * Lines / H / V   -- endpoints are sufficient (linear interpolation is
+                           bounded by its endpoints).
+      * Cubic Bezier (C/S) -- solves B'(t)=0 (quadratic) per axis to find the
+                              true extrema of the curve, then evaluates B(t)
+                              at each root.
+      * Quadratic Bezier (Q/T) -- same approach, B'(t)=0 is linear (one root).
+      * Elliptical arc (A) -- converts to center parameterisation and finds the
+                              angles where the ellipse reaches its x/y extrema,
+                              then checks only those angles that fall within the
+                              arc's actual sweep.
+
+    A small tolerance (BOUNDS_TOLERANCE) is applied to each boundary so that
+    sub-pixel floating-point rounding from SVG authoring tools does not trigger
+    false positives.
+
+    Must only be called after validate_single_path passes.
+    Returns an error message string listing every out-of-bounds extreme point,
+    or None if the path is fully contained.
+    """
+    vb = info["viewBox"]   # guaranteed valid by this point
+    min_x, min_y, w, h = vb
+    max_x, max_y = min_x + w, min_y + h
+    tol = BOUNDS_TOLERANCE
+
+    path_d = info["paths"][0]
+    try:
+        points = path_extreme_points(path_d)
+    except Exception as exc:
+        return f"  x  {name}: could not analyse path geometry - {exc}"
+
+    violations: list[str] = []
+    for x, y in points:
+        if not (min_x - tol <= x <= max_x + tol and min_y - tol <= y <= max_y + tol):
+            violations.append(f"({x:.4g}, {y:.4g})")
+
+    if violations:
+        detail = ", ".join(violations)
+        return (
+            f"  x  {name}: path geometry exceeds viewBox bounds at: {detail}"
+        )
     return None
 
 
@@ -404,9 +864,18 @@ def update_dashboard(
 
 def scan_icons(icons_dir: Path) -> dict[str, dict]:
     """
-    Return a dict of {icon_name: svg_info} for all valid SVGs in icons_dir.
+    Scan *icons_dir* for SVG files, validate each one, and return
+    {icon_name: svg_info}.
 
-    Raises SystemExit if any icon fails viewBox validation.
+    All three checks run for every icon (where possible) so contributors see
+    all problems in a single pass.  If any check fails the script exits with
+    code 1 before writing any output files.
+
+    Validation order per icon:
+        1. viewBox is exactly "0 0 24 24"
+        2. Exactly one <path> element
+        3. Rendered path geometry lies entirely within the viewBox
+           (uses analytic curve extrema — not raw control-point coordinates)
     """
     icons: dict[str, dict] = {}
     if not icons_dir.is_dir():
@@ -416,34 +885,52 @@ def scan_icons(icons_dir: Path) -> dict[str, dict]:
     svg_files = sorted(icons_dir.glob("*.svg"), key=lambda p: p.stem.lower())
     print(f"Found {len(svg_files)} SVG file(s) in {icons_dir}")
 
-    viewbox_errors: list[str] = []
+    all_errors: list[str] = []
 
     for svg_path in svg_files:
         name = filename_to_icon_name(svg_path)
         info = extract_svg_info(svg_path)
         if info is None:
-            print(f"  ✗  {name}  (skipped – could not parse)")
+            msg = f"  ✗  {name}: could not parse SVG file"
+            all_errors.append(msg)
+            print(msg, file=sys.stderr)
             continue
 
-        # Validate viewBox before accepting the icon
-        error = validate_viewbox(name, info)
-        if error is not None:
-            viewbox_errors.append(error)
-            print(error, file=sys.stderr)
+        icon_errors: list[str] = []
+
+        # Check 1: viewBox
+        err = validate_viewbox(name, info)
+        if err:
+            icon_errors.append(err)
+
+        # Check 2: single path
+        # (only meaningful if viewBox is valid; skip if check 1 failed)
+        if not icon_errors:
+            err = validate_single_path(name, info)
+            if err:
+                icon_errors.append(err)
+
+        # Check 3: path geometry within viewBox bounds
+        # (requires both a valid viewBox and a single path)
+        if not icon_errors:
+            err = validate_path_bounds(name, info)
+            if err:
+                icon_errors.append(err)
+
+        if icon_errors:
+            for e in icon_errors:
+                print(e, file=sys.stderr)
+            all_errors.extend(icon_errors)
         else:
             icons[name] = info
             print(f"  ✓  {name}")
 
-    # Hard stop if any icons had an invalid viewBox
-    if viewbox_errors:
+    if all_errors:
         print(
-            f"\n[ERROR] {len(viewbox_errors)} icon(s) have an invalid viewBox. "
-            f"All icons must use viewBox=\"{REQUIRED_VIEWBOX_STR}\".\n"
-            "Offending icons:",
+            f"\n[ERROR] {len(all_errors)} validation error(s) found. "
+            "No files have been modified. Fix the issues above and re-run.",
             file=sys.stderr,
         )
-        for err in viewbox_errors:
-            print(err, file=sys.stderr)
         sys.exit(1)
 
     return icons

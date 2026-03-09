@@ -588,6 +588,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: omada-alt
+        icon: cust:omada-alt
+      - show_name: true
+        show_icon: true
+        type: button
         name: omni-tools
         icon: cust:omni-tools
       - show_name: true
