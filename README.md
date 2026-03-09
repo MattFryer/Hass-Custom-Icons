@@ -89,6 +89,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/claude-ai.svg" width="48px" alt="cust:claude-ai"> | cust:claude-ai |
 | <img src="/Assets/Icons/collabora.svg" width="48px" alt="cust:collabora"> | cust:collabora |
 | <img src="/Assets/Icons/copilot.svg" width="48px" alt="cust:copilot"> | cust:copilot |
+| <img src="/Assets/Icons/cura.svg" width="48px" alt="cust:cura"> | cust:cura |
 | <img src="/Assets/Icons/ddclient.svg" width="48px" alt="cust:ddclient"> | cust:ddclient |
 | <img src="/Assets/Icons/deepseek.svg" width="48px" alt="cust:deepseek"> | cust:deepseek |
 | <img src="/Assets/Icons/dewalt.svg" width="48px" alt="cust:dewalt"> | cust:dewalt |

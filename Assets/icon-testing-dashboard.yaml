@@ -163,6 +163,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: cura
+        icon: cust:cura
+      - show_name: true
+        show_icon: true
+        type: button
         name: ddclient
         icon: cust:ddclient
       - show_name: true
