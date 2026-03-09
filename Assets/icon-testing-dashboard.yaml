@@ -673,6 +673,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: qbittorrent
+        icon: cust:qbittorrent
+      - show_name: true
+        show_icon: true
+        type: button
         name: readarr
         icon: cust:readarr
       - show_name: true

@@ -191,6 +191,7 @@ Below are all of the currently available icons in this component and their codes
 | <img src="/Assets/Icons/portainer.svg" width="48px" alt="cust:portainer"> | cust:portainer |
 | <img src="/Assets/Icons/power-bi.svg" width="48px" alt="cust:power-bi"> | cust:power-bi |
 | <img src="/Assets/Icons/pulsarr.svg" width="48px" alt="cust:pulsarr"> | cust:pulsarr |
+| <img src="/Assets/Icons/qbittorrent.svg" width="48px" alt="cust:qbittorrent"> | cust:qbittorrent |
 | <img src="/Assets/Icons/readarr.svg" width="48px" alt="cust:readarr"> | cust:readarr |
 | <img src="/Assets/Icons/resideo.svg" width="48px" alt="cust:resideo"> | cust:resideo |
 | <img src="/Assets/Icons/resideo-alt.svg" width="48px" alt="cust:resideo-alt"> | cust:resideo-alt |
