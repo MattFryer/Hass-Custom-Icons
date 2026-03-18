@@ -861,6 +861,37 @@ def update_dashboard(
 
 
 # ---------------------------------------------------------------------------
+# SVG normalisation
+# ---------------------------------------------------------------------------
+
+SVG_HEADER = (
+    '<svg version="1.2" xmlns="http://www.w3.org/2000/svg"'
+    ' viewBox="0 0 24 24" width="24" height="24">'
+    '<style></style>'
+    '<path d="'
+)
+SVG_FOOTER = '"/></svg>'
+
+
+def normalise_svg_file(svg_path: Path, path_d: str, dry_run: bool = False) -> bool:
+    """
+    Rewrite *svg_path* with the standardised single-path SVG format.
+
+    Header: <svg version="1.2" xmlns="..." viewBox="0 0 24 24" width="24" height="24"><style></style><path d="
+    Footer: "/></svg>
+
+    Returns True if the file was (would be) changed.
+    """
+    normalised = SVG_HEADER + path_d + SVG_FOOTER
+    current = svg_path.read_text(encoding="utf-8") if svg_path.exists() else ""
+    if current == normalised:
+        return False
+    if not dry_run:
+        svg_path.write_text(normalised, encoding="utf-8")
+    return True
+
+
+# ---------------------------------------------------------------------------
 
 def scan_icons(icons_dir: Path) -> dict[str, dict]:
     """
@@ -981,17 +1012,30 @@ def main() -> None:
 
     print(f"\nProcessed {len(icons)} icon(s).\n")
 
-    # 2. Update JS
+    # 2. Normalise SVG files
+    print("Normalising SVG files …")
+    svg_changed_count = 0
+    for name, info in icons.items():
+        svg_path = icons_dir / f"{name}.svg"
+        changed = normalise_svg_file(svg_path, info["paths"][0], dry_run=args.dry_run)
+        if changed:
+            svg_changed_count += 1
+            print(f"  → Normalised: {name}.svg")
+    if svg_changed_count == 0:
+        print("  → All SVG files already normalised.")
+    print()
+
+    # 3. Update JS
     print(f"Updating {js_path} …")
     js_changed = update_js(js_path, icons, args.prefix, dry_run=args.dry_run)
     print("  → Changed." if js_changed else "  → No change.")
 
-    # 3. Update README
+    # 4. Update README
     print(f"\nUpdating {readme} …")
     readme_changed = update_readme(readme, icons, args.prefix, icons_dir, dry_run=args.dry_run)
     print("  → Changed." if readme_changed else "  → No change.")
 
-    # 4. Update testing dashboard
+    # 5. Update testing dashboard
     print(f"\nUpdating {dashboard} …")
     dash_changed = update_dashboard(dashboard, icons, args.prefix, dry_run=args.dry_run)
     print("  → Changed." if dash_changed else "  → No change.")
