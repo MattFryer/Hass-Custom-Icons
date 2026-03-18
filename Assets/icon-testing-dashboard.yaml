@@ -558,6 +558,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: obsidian
+        icon: cust:obsidian
+      - show_name: true
+        show_icon: true
+        type: button
         name: ocado
         icon: cust:ocado
       - show_name: true
