@@ -479,7 +479,7 @@ def extract_svg_info(svg_path: Path) -> dict | None:
     # ---- viewBox ----
     vb_raw = root.get("viewBox", "").strip()
     try:
-        vb = [float(v) for v in vb_raw.replace(",", " ").split()]
+        vb = [round(float(v), 3) for v in vb_raw.replace(",", " ").split()]
         if len(vb) != 4:
             raise ValueError
     except ValueError:
