@@ -878,6 +878,16 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: yubico
+        icon: cust:yubico
+      - show_name: true
+        show_icon: true
+        type: button
+        name: yubikey
+        icon: cust:yubikey
+      - show_name: true
+        show_icon: true
+        type: button
         name: zigbee2mqtt
         icon: cust:zigbee2mqtt
 # <<CARDS_END>>
