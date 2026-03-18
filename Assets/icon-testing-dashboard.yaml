@@ -743,6 +743,11 @@ views:
       - show_name: true
         show_icon: true
         type: button
+        name: stirling-pdf-alt
+        icon: cust:stirling-pdf-alt
+      - show_name: true
+        show_icon: true
+        type: button
         name: synology
         icon: cust:synology
       - show_name: true
